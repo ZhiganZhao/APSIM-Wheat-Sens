@@ -7,10 +7,6 @@ output:
     highlight: textmate
     mathjax: null
     lib_dir: libs
-    includes:
-      in_header: _includes/header.html
-      after_body: _includes/after_body.html
-    css: _includes/style.css
     toc_depth: 3
     toc_float:
       collapsed: false

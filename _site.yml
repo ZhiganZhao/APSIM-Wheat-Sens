@@ -6,7 +6,7 @@ output:
     theme: flatly
     highlight: textmate
     mathjax: null
-    css: _includes/style.css
+    css: style.css
     toc_depth: 3
     toc_float:
       collapsed: false

@@ -1,5 +1,6 @@
+library(rmarkdown)
+
 tryCatch({
-    library(rmarkdown)
     clean_site()
     render_site()
 }, error = function(e) {

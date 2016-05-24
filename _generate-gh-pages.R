@@ -19,6 +19,17 @@ tryCatch({
             file_name <- paste0(gsub('(.*)\\..*', '\\1', para_j$href), '.Rmd')
             template <- readLines('_template.Rmd')
             # Change template
+            para_new <- paste0(
+                'list(', 
+                paste(
+                    paste(names(para_j), 
+                          paste0('"', para_j, '"'),
+                          sep = ' = '), 
+                    collapse = ', '),
+                ')')
+            pos <- grep('para: !r', template)
+            template[pos] <- gsub('(.*para: !r )(.*)', paste0('\\1', para_new), template[pos])
+            
             rmd_new <- template
             writeLines(rmd_new, file_name)
             

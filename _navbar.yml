@@ -1,8 +1,9 @@
-title: "Sensitivity analysis"
+title: Sensitivity analysis
 type: inverse
 left:
-  - text: "Home"
+-   text: Home
     href: index.html
 right:
-  - icon: fa-github fa-lg
+-   icon: fa-github fa-lg
     href: https://github.com/byzheng/APSIM-Wheat-Sens
+

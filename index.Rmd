@@ -21,8 +21,8 @@ A simulation is setup to demo the relationship among traits based on the cv. Har
 
 
 # Authors
-Bangyou Zheng <bangyou.zheng@csiro.au>
-Karine Chenu <karine.chenu@uq.edu.au>
+- Bangyou Zheng <bangyou.zheng@csiro.au>
+- Karine Chenu <karine.chenu@uq.edu.au>
 
 
 # How to contribute?

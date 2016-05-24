@@ -1,0 +1,31 @@
+---
+params:
+    para: !r list(text = 'PotentialExtinctionCoeff', name =  "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y", href = "PotentialExtinctionCoeff.html")
+---
+
+---
+title: Sensitivity analysis for `r params$para$text`
+---
+
+
+
+```{r setup, message=FALSE, echo=FALSE, warning=FALSE}
+library(knitr)
+opts_chunk$set(
+    cache = FALSE, echo = FALSE, 
+    out.width = '80%', fig.asp = 1.2,
+    warning = FALSE, fig.align = 'center',
+    message = FALSE) 
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(xml2)
+
+```
+
+# Phenology 
+
+```{r}
+params$para
+```

@@ -2,6 +2,8 @@
 title: "Sensitivity Analysis for APSIM-Wheat"
 ---
 
+# Introduction
+
 Here we show the sensitivity analysis for major parameters in APSIM-Wheat.
 
 
@@ -13,5 +15,21 @@ This documentation is based on the current version of [APSIM-Wheat module](https
 ```{block, type='rmdnote', echo=TRUE}
 A simulation is setup to demo the relationship among traits based on the cv. Hartog with high nitrogen and irrigation management under 15TraitMod experiment. The values in the figures below could be variable in other environments.</p>
 ```
+
+
+
+
+
+# Authors
+Bangyou Zheng <bangyou.zheng@csiro.au>
+Karine Chenu <karine.chenu@uq.edu.au>
+
+
+# How to contribute?
+
+This documentation is wrote by [RMarkdown](rmarkdown.rstudio.com). I suggest you firstly to read the introduction about [RMarkdown](rmarkdown.rstudio.com), then fork this repository into your github account. Feel free to submit a pull request. 
+
+
+
 
 

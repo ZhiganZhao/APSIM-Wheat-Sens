@@ -9,7 +9,7 @@ tryCatch({
     navbar_new$left <- c(navbar_new$left, para)
     
     writeLines(as.yaml(navbar_new), '_navbar.yml')
-    
+    files_tmp <- NULL
     for (i in seq(along = para)) {
         # i <- 1
         para_i <- para[[i]]$menu
@@ -21,17 +21,14 @@ tryCatch({
             # Change template
             rmd_new <- template
             writeLines(rmd_new, file_name)
-            render(
-                file_name 
-                , params = list(
-                    para = para_j)
-            )
-            file.remove(file_name)
+            
+            files_tmp <- c(files_tmp, file_name)
         }
     }
     
     render_site()
     writeLines(as.yaml(navbar, indent = 4), '_navbar.yml')
+    file.remove(files_tmp)
 }, error = function(e) {
     print(e)
     quit(save = "no", status = 100, runLast = FALSE)

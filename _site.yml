@@ -1,0 +1,22 @@
+name: "Sensitivity analysis for APSIM Wheat"
+output_dir: '.'
+output:
+  html_document:
+    self_contained: false
+    theme: flatly
+    highlight: textmate
+    mathjax: null
+    lib_dir: libs
+    includes:
+      in_header: _includes/header.html
+      after_body: _includes/after_body.html
+    css: _includes/style.css
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      theme: flatly
+    fig_width: 5.5
+    fig_height: 2.25
+    message: false
+    fig_retina: 1
+

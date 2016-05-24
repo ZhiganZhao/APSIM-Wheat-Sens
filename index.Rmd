@@ -1,0 +1,17 @@
+---
+title: "Sensitivity Analysis for APSIM-Wheat"
+---
+
+Here we show the sensitivity analysis for major parameters in APSIM-Wheat.
+
+
+```{block, type = 'rmdimportant', echo=TRUE}
+This documentation is based on the current version of [APSIM-Wheat module](https://github.com/APSIMInitiative/ApsimX/blob/5937006840bcfcd663353378653598176262fe0a/Prototypes/Wheat/WheatValidation.apsimx) updated on 15-May-2016.
+```
+
+
+```{block, type='rmdnote', echo=TRUE}
+A simulation is setup to demo the relationship among traits based on the cv. Hartog with high nitrogen and irrigation management under 15TraitMod experiment. The values in the figures below could be variable in other environments.</p>
+```
+
+

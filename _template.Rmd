@@ -8,7 +8,7 @@ params:
 title: `r params$para$text`: Sensitivity analysis
 ---
 
-
+# `r params$para$text`: Sensitivity analysis
 
 ```{r setup, message=FALSE, echo=FALSE, warning=FALSE}
 library(knitr)
@@ -37,7 +37,7 @@ x_var <- c(
 x_lab <- 'Accumulated thermal time or stage'
 
 ```
-# Configuration
+## Configuration
 
 ```{r configuration}
 
@@ -60,13 +60,13 @@ data.frame(Cultivar = paste0('Dummy', seq(length = level_num))) %>%
 ```
 
 
-# Phenology 
+## Phenology 
 
-# Structure
+## Structure
 
-# Leaf development
+## Leaf development
 
-## Leaf area index
+### Leaf area index
 
 ```{r leaf-lai, fig.cap='Leaf area index'}
 y_cols <- c(
@@ -76,7 +76,7 @@ y_cols <- c(
 plot_report(df, x_var, y_cols, x_lab = x_lab, y_lab = 'Leaf area index')
 
 ```
-## Coverage
+### Coverage
 
 ```{r leaf-cover, fig.cap='Coverage'}
 y_cols <- c(

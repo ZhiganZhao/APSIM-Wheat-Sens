@@ -40,7 +40,7 @@ x_lab <- 'Accumulated thermal time or stage'
 
 ```{r configuration}
 data.frame(Cultivar = paste0('Dummy', seq(along = para$level)),
-           Level = para$level) %>% 
+           Value = para$level) %>% 
     kable()
 
 ```

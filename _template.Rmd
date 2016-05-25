@@ -1,6 +1,6 @@
 ---
 params:
-    para: !r list(text = 'PotentialExtinctionCoeff', name =  "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y", href = "PotentialExtinctionCoeff.html")
+    para: !r list(text = 'PotentialExtinctionCoeff', name =  "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y", href = "PotentialExtinctionCoeff.html", level = c("0.3, 0.3", "0.5, 0.5", "0.7, 0.7"))
 ---
 
 ---
@@ -13,7 +13,7 @@ title: `r params$para$text`: Sensitivity analysis
 library(knitr)
 opts_chunk$set(
     cache = FALSE, echo = FALSE, 
-    out.width = '80%', fig.asp = 1.2,
+    out.width = '100%', fig.asp = 1,
     warning = FALSE, fig.align = 'center',
     message = FALSE) 
 library(readr)
@@ -21,11 +21,61 @@ library(dplyr)
 library(ggplot2)
 library(tidyr)
 library(xml2)
+source('_utility.R')
+```
+
+```{r read_data}
+
+para <- params$para
+input <- paste0('_simulation/', para$text, '.db.Report.csv')
+df <- read.csv(input)
+
+x_var <- c(
+    'Wheat.Phenology.Stage',
+    'Wheat.Phenology.AccumulateThermalTime')
+x_lab <- 'Accumulated thermal time or stage'
 
 ```
+# Configuration
+
+```{r configuration}
+data.frame(Cultivar = paste0('Dummy', seq(along = para$level)),
+           Level = para$level) %>% 
+    kable()
+
+```
+
 
 # Phenology 
 
-```{r}
-params$para
+# Structure
+
+# Leaf development
+
+## Leaf area index
+
+```{r leaf-lai, fig.cap='Leaf area index'}
+y_cols <- c(
+    'Wheat.Leaf.LAI', 
+'Wheat.Leaf.LAIDead',
+'Wheat.Leaf.LAITotal')
+plot_report(df, x_var, y_cols, x_lab = x_lab, y_lab = 'Leaf area index')
+
 ```
+## Coverage
+
+```{r leaf-cover, fig.cap='Coverage'}
+y_cols <- c(
+    'Wheat.Leaf.CoverGreen',
+    'Wheat.Leaf.CoverDead',
+    'Wheat.Leaf.CoverTotal')
+plot_report(df, x_var, y_cols, x_lab = x_lab, y_lab = 'Coverage')
+
+```
+
+
+
+
+
+
+

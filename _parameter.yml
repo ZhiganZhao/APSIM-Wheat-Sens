@@ -2,7 +2,9 @@
   menu:
     - text: PotentialExtinctionCoeff
       name: "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y"
+      level: ["0.3, 0.3", "0.5, 0.5", "0.7, 0.7"]
       href: PotentialExtinctionCoeff.html
     - text: FrostFraction
       name: "[Leaf].FrostFraction.XYPairs.Y"
       href: FrostFraction.html
+      level: ["0, 0", "0.1, 0.1", "0.2, 0.2"]

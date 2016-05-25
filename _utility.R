@@ -13,12 +13,17 @@ new_breaks <- function(x) {
 
 
 sensitivity_test <- function(
-    name, level, filename, 
+    para, filename, 
     template = '_simulation/sensitivity.apsimx',
     apsimx = 'C:/Users/zhe00a/Documents/Working/04-Software/032-ApsimX/ApsimX/Bin/Models.exe') {
-    if (is.null(level)) {
-        stop('Level needs to be specified')
+    
+    # Check levels
+    levels <- unlist(lapply(para$para, function(x) length(x$level)))
+    if (mean(levels) != min(levels)) {
+        stop('Levels do not have the same length')
     }
+    level_num <- levels[1]
+    
     output_file <- gsub('apsimx', 'db.Report.csv', filename)
     if (file.exists(output_file)) {
         return(NULL)
@@ -32,12 +37,20 @@ sensitivity_test <- function(
     start1 <- grep('<Name>Hartog</Name>', apsimx_template[start:end]) - 2 + start
     end1 <- grep('</Cultivar>', apsimx_template[start1:end])[1] + start1 - 1
     cultivar_old <- apsimx_template[start1:end1]
-    value_new <- paste0('<Command>', paste0(name, ' = ', level), '</Command>')
+    
+    
+    
     cultivar_new <- NULL
-    for (i in seq(along = value_new)) {
+    for (i in seq(length = level_num)) {
         temp <- cultivar_old
         temp <- gsub('Hartog', paste0('Dummy', i), temp)
-        cultivar_new <- c(cultivar_new, append(temp, value_new[i], length(temp) - 1))
+        for (j in seq(along = para$para)) {
+            temp <- append(temp, paste0(
+                '<Command>', para$para[[j]]$name, 
+                ' = ', para$para[[j]]$level[i],
+                '</Command>'), length(temp) - 1)
+        }
+        cultivar_new <- c(cultivar_new, temp)
     }
     apsimx_template <- append(apsimx_template, cultivar_new, end - 1)
     
@@ -48,7 +61,7 @@ sensitivity_test <- function(
     
     operations <- apsimx_template[start:end]
     operations_new <- NULL
-    for (i in seq(along = value_new)) {
+    for (i in seq(length = level_num)) {
         temp <- operations
         temp <- gsub('template', paste0('Dummy', i), temp)
         temp <- gsub('hartog', paste0('Dummy', i), temp)

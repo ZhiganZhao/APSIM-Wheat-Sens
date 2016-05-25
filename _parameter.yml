@@ -1,10 +1,21 @@
+- text: "Phenology"
+  menu:
+    - text: VernSens
+      para:
+        - name: "[Phenology].Vernalisation.VernSens"
+          level: ["1.5", "2.5", "3.5"]
+      href: VernSens.html
 - text: "Leaf development"
   menu:
     - text: PotentialExtinctionCoeff
-      name: "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y"
-      level: ["0.3, 0.3", "0.5, 0.5", "0.7, 0.7"]
+      para: 
+        - name: "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.X"
+          level: ["0, 0.5", "0.0, 0.5", "0.0, 0.5"]
+        - name: "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y"
+          level: ["0.3, 0.3", "0.5, 0.5", "0.7, 0.7"]
       href: PotentialExtinctionCoeff.html
     - text: FrostFraction
-      name: "[Leaf].FrostFraction.XYPairs.Y"
+      para:
+        - name: "[Leaf].FrostFraction.XYPairs.Y"
+          level: ["0, 0", "0.1, 0.1", "0.2, 0.2"]
       href: FrostFraction.html
-      level: ["0, 0", "0.1, 0.1", "0.2, 0.2"]

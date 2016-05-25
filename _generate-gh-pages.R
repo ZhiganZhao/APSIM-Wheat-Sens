@@ -20,16 +20,7 @@ tryCatch({
             file_name <- paste0(gsub('(.*)\\..*', '\\1', para_j$href), '.Rmd')
             template <- readLines('_template.Rmd')
             # Change template
-            para_new <- paste0(
-                'list(', 
-                paste(
-                    paste(names(para_j), 
-                          lapply(para_j, function(x) {
-                              paste0('c(', paste(paste0('"', x, '"'), collapse = ', '), ')')
-                          }),
-                          sep = ' = '), 
-                    collapse = ', '),
-                ')')
+            para_new <- toString(list('AAAAA' = para_j))
             pos <- grep('para: !r', template)
             template[pos] <- gsub('(.*para: !r )(.*)', paste0('\\1', para_new), template[pos])
             
@@ -37,8 +28,7 @@ tryCatch({
             writeLines(rmd_new, file_name)
             
             sensitivity_test(
-                para_j$name
-                , para_j$level
+                para_j
                 , paste0('_simulation/', para_j$text, '.apsimx'))
             
             files_tmp <- c(files_tmp, file_name)

@@ -1,10 +1,11 @@
 library(rmarkdown)
 library(yaml)
 source('_utility.R')
+navbar <- yaml.load_file('_navbar.yml')
+
 tryCatch({
     # clean_site()
     para <- yaml.load_file('_parameter.yml')
-    navbar <- yaml.load_file('_navbar.yml')
     
     navbar_new <- navbar
     navbar_new$left <- c(navbar_new$left, para)
@@ -39,6 +40,9 @@ tryCatch({
     writeLines(as.yaml(navbar, indent = 4), '_navbar.yml')
     file.remove(files_tmp)
 }, error = function(e) {
+    writeLines(as.yaml(navbar, indent = 4), '_navbar.yml')
     print(e)
-    quit(save = "no", status = 100, runLast = FALSE)
+    if (Sys.info()['sysname'] != 'windows') {
+        quit(save = "no", status = 100, runLast = FALSE)
+    }
 })

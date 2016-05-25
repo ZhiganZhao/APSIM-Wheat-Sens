@@ -4,23 +4,30 @@ title: "Sensitivity Analysis for APSIM-Wheat"
 
 # Introduction
 
-Here we show the sensitivity analysis for major parameters in APSIM-Wheat.
 
-
-```{block, type = 'rmdimportant', echo=TRUE}
+```{block, type='rmdimportant', echo=TRUE}
 This documentation is based on the current version of [APSIM-Wheat module](https://github.com/APSIMInitiative/ApsimX/blob/5937006840bcfcd663353378653598176262fe0a/Prototypes/Wheat/WheatValidation.apsimx) updated on 15-May-2016.
 ```
 
 
+Here we show the sensitivity analysis for major parameters in APSIM-Wheat. All pages of sensitivity analysis are automatically compiled from a template, so that the similar page structure is presented in all pages. Pay attentions to title and table of contents in each page.
+
+
+
+
+
+
+
 ```{block, type='rmdnote', echo=TRUE}
-A simulation is setup to demo the relationship among traits based on the cv. Hartog with high nitrogen and irrigation management under 15TraitMod experiment. The values in the figures below could be variable in other environments.</p>
+A simulation is setup to demo the relationship among traits based on the cv. Hartog with high nitrogen and irrigation management under 15TraitMod experiment. The values in the figures below could be variable in other environments.
 ```
 
 
 
 
 
-# Authors
+# Contributors
+
 - Bangyou Zheng <bangyou.zheng@csiro.au>
 - Karine Chenu <karine.chenu@uq.edu.au>
 
@@ -30,6 +37,43 @@ A simulation is setup to demo the relationship among traits based on the cv. Har
 This documentation is wrote by [RMarkdown](rmarkdown.rstudio.com). I suggest you firstly to read the introduction about [RMarkdown](rmarkdown.rstudio.com), then fork this repository into your github account. Feel free to submit a pull request. 
 
 
+## Add a new parameter set
+
+A configuration file `_parameter.yml` is configured to specify the parameter set for sensivitity analysis. The `_parameter.yml` is wrote with `yaml` former which is similar with `rmarkdown` header for navigation.  The main components and differences are explained below. You can see the [rmarkdown website](http://rmarkdown.rstudio.com/rmarkdown_websites.html) for more details of navigation bar in `rmarkdown` website.
+
+
+The example below shows how to configure sensitivity analysis for `PotentialExtinctionCoeff` and `FrostFraction`. 
+This `memu` keyword defines the drop-down menus for a large number of pages. Each set of sensitivity analysis is defined with 3 keywords: 1) `text` for the title of menu and title page, which could be any text; 2) `para` for a set of parameters; 3) `href` for a file name of html output, which only contains the file path allows characters. The parameter set can contain any number of parameters. Each paramter is defined by 2 keywords: 1) `name` for the replacement of cultivar in next generation APSIM; 2) `level` for several parameter values of sensivitity analysis. The number of level in all parameters have to have the same length. 
+
+```yaml
+- text: "Leaf development"
+  menu:
+    - text: PotentialExtinctionCoeff
+      para: 
+        - name: "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.X"
+          level: ["0, 0.5", "0.0, 0.5", "0.0, 0.5"]
+        - name: "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y"
+          level: ["0.3, 0.3", "0.5, 0.5", "0.7, 0.7"]
+      href: PotentialExtinctionCoeff.html
+    - text: FrostFraction
+      para:
+        - name: "[Leaf].FrostFraction.XYPairs.Y"
+          level: ["0, 0", "0.1, 0.1", "0.2, 0.2"]
+      href: FrostFraction.html
+
+```
+
+
+## Add new figure
+
+The templates of APSIM simulation and Rmarkdown are prepared to automatically generate sensitivity analysis for the predefined parameter sets. If you want to add a new figure into report, you need to make sure the output variables in the APSIM simulations (`_simulation/sensitivity.apsimx`), then add a few lines of R scripts into `_template.Rmd`. 
 
 
 
+After finishing your changes, you can submit a pull request through github. Then I will check your changes before merging into master branch. Travis-ci should automatically compile your changes and publish into gh-pages.
+
+
+
+```{block, type='rmdimportant', echo=TRUE}
+Need to figure out how to run APSIM under travis-ci.
+```

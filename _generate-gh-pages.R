@@ -1,7 +1,8 @@
 library(rmarkdown)
 library(yaml)
+source('_utility.R')
 tryCatch({
-    clean_site()
+    # clean_site()
     para <- yaml.load_file('_parameter.yml')
     navbar <- yaml.load_file('_navbar.yml')
     
@@ -23,7 +24,9 @@ tryCatch({
                 'list(', 
                 paste(
                     paste(names(para_j), 
-                          paste0('"', para_j, '"'),
+                          lapply(para_j, function(x) {
+                              paste0('c(', paste(paste0('"', x, '"'), collapse = ', '), ')')
+                          }),
                           sep = ' = '), 
                     collapse = ', '),
                 ')')
@@ -32,6 +35,11 @@ tryCatch({
             
             rmd_new <- template
             writeLines(rmd_new, file_name)
+            
+            sensitivity_test(
+                para_j$name
+                , para_j$level
+                , paste0('_simulation/', para_j$text, '.apsimx'))
             
             files_tmp <- c(files_tmp, file_name)
         }

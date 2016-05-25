@@ -1,6 +1,7 @@
 ---
 params:
-    para: !r list(text = 'PotentialExtinctionCoeff', name =  "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y", href = "PotentialExtinctionCoeff.html", level = c("0.3, 0.3", "0.5, 0.5", "0.7, 0.7"))
+    para: !r list(text = "PotentialExtinctionCoeff", para = list(list(name = "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.X", level = c("0, 0.5", "0.0, 0.5", "0.0, 0.5")), list(name = "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y", level = c("0.3, 0.3", "0.5, 0.5", "0.7, 0.7"))), href = "PotentialExtinctionCoeff.html")
+
 ---
 
 ---
@@ -39,9 +40,22 @@ x_lab <- 'Accumulated thermal time or stage'
 # Configuration
 
 ```{r configuration}
-data.frame(Cultivar = paste0('Dummy', seq(along = para$level)),
-           Value = para$level) %>% 
-    kable()
+
+levels <- unlist(lapply(para$para, function(x) length(x$level)))
+if (mean(levels) != min(levels)) {
+    stop('Levels do not have the same length')
+}
+level_num <- levels[1]
+
+value <- as.data.frame(lapply(para$para, function(x) {
+    y <- list()
+    y[[x$name]] <- x$level
+    y
+}))
+
+data.frame(Cultivar = paste0('Dummy', seq(length = level_num))) %>% 
+    cbind(value) %>% 
+        kable()
 
 ```
 

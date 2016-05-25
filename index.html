@@ -277,7 +277,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Sensitivity analysis</a>
+      <a class="navbar-brand" href="index.html">Sensitivity analysis for APSIM-Wheat</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -332,19 +332,20 @@ div.tocify {
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>Here we show the sensitivity analysis for major parameters in APSIM-Wheat.</p>
 <div class="rmdimportant">
 <p>
 This documentation is based on the current version of <a href="https://github.com/APSIMInitiative/ApsimX/blob/5937006840bcfcd663353378653598176262fe0a/Prototypes/Wheat/WheatValidation.apsimx">APSIM-Wheat module</a> updated on 15-May-2016.
 </p>
 </div>
+<p>Here we show the sensitivity analysis for major parameters in APSIM-Wheat. All pages of sensitivity analysis are automatically compiled from a template, so that the similar page structure is presented in all pages. Pay attentions to title and table of contents in each page.</p>
 <div class="rmdnote">
+<p>
 A simulation is setup to demo the relationship among traits based on the cv. Hartog with high nitrogen and irrigation management under 15TraitMod experiment. The values in the figures below could be variable in other environments.
 </p>
 </div>
 </div>
-<div id="authors" class="section level1">
-<h1>Authors</h1>
+<div id="contributors" class="section level1">
+<h1>Contributors</h1>
 <ul>
 <li>Bangyou Zheng <a href="mailto:bangyou.zheng@csiro.au">bangyou.zheng@csiro.au</a></li>
 <li>Karine Chenu <a href="mailto:karine.chenu@uq.edu.au">karine.chenu@uq.edu.au</a></li>
@@ -353,6 +354,36 @@ A simulation is setup to demo the relationship among traits based on the cv. Har
 <div id="how-to-contribute" class="section level1">
 <h1>How to contribute?</h1>
 <p>This documentation is wrote by <a href="rmarkdown.rstudio.com">RMarkdown</a>. I suggest you firstly to read the introduction about <a href="rmarkdown.rstudio.com">RMarkdown</a>, then fork this repository into your github account. Feel free to submit a pull request.</p>
+<div id="add-a-new-parameter-set" class="section level2">
+<h2>Add a new parameter set</h2>
+<p>A configuration file <code>_parameter.yml</code> is configured to specify the parameter set for sensivitity analysis. The <code>_parameter.yml</code> is wrote with <code>yaml</code> former which is similar with <code>rmarkdown</code> header for navigation. The main components and differences are explained below. You can see the <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html">rmarkdown website</a> for more details of navigation bar in <code>rmarkdown</code> website.</p>
+<p>The example below shows how to configure sensitivity analysis for <code>PotentialExtinctionCoeff</code> and <code>FrostFraction</code>. This <code>memu</code> keyword defines the drop-down menus for a large number of pages. Each set of sensitivity analysis is defined with 3 keywords: 1) <code>text</code> for the title of menu and title page, which could be any text; 2) <code>para</code> for a set of parameters; 3) <code>href</code> for a file name of html output, which only contains the file path allows characters. The parameter set can contain any number of parameters. Each paramter is defined by 2 keywords: 1) <code>name</code> for the replacement of cultivar in next generation APSIM; 2) <code>level</code> for several parameter values of sensivitity analysis. The number of level in all parameters have to have the same length.</p>
+<pre class="yaml"><code>- text: &quot;Leaf development&quot;
+  menu:
+    - text: PotentialExtinctionCoeff
+      para: 
+        - name: &quot;[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.X&quot;
+          level: [&quot;0, 0.5&quot;, &quot;0.0, 0.5&quot;, &quot;0.0, 0.5&quot;]
+        - name: &quot;[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y&quot;
+          level: [&quot;0.3, 0.3&quot;, &quot;0.5, 0.5&quot;, &quot;0.7, 0.7&quot;]
+      href: PotentialExtinctionCoeff.html
+    - text: FrostFraction
+      para:
+        - name: &quot;[Leaf].FrostFraction.XYPairs.Y&quot;
+          level: [&quot;0, 0&quot;, &quot;0.1, 0.1&quot;, &quot;0.2, 0.2&quot;]
+      href: FrostFraction.html
+</code></pre>
+</div>
+<div id="add-new-figure" class="section level2">
+<h2>Add new figure</h2>
+<p>The templates of APSIM simulation and Rmarkdown are prepared to automatically generate sensitivity analysis for the predefined parameter sets. If you want to add a new figure into report, you need to make sure the output variables in the APSIM simulations (<code>_simulation/sensitivity.apsimx</code>), then add a few lines of R scripts into <code>_template.Rmd</code>.</p>
+<p>After finishing your changes, you can submit a pull request through github. Then I will check your changes before merging into master branch. Travis-ci should automatically compile your changes and publish into gh-pages.</p>
+<div class="rmdimportant">
+<p>
+Need to figure out how to run APSIM under travis-ci.
+</p>
+</div>
+</div>
 </div>
 
 

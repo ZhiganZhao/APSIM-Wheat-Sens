@@ -5,6 +5,11 @@
         - name: "[Phenology].Vernalisation.VernSens"
           level: ["1.5", "2.5", "3.5"]
       href: VernSens.html
+    - text: PhotopSens
+      para:
+        - name: "[Phenology].Vernalisation.PhotopSens"
+          level: ["2", "3", "4"]
+      href: PhotopSens.html
 - text: "Leaf development"
   menu:
     - text: PotentialExtinctionCoeff

@@ -2242,19 +2242,22 @@ The EarLive composite biomass object includes the Live pools of all organs withi
             <Name>Dummy1</Name>
             <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
             <Command>[Phenology].Vernalisation.PhotopSens = 3.0</Command>
+<Command>[Leaf].FrostFraction.XYPairs.X = -1, 0</Command>
 <Command>[Leaf].FrostFraction.XYPairs.Y = 0, 0</Command>
           </Cultivar>
           <Cultivar>
             <Name>Dummy2</Name>
             <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
             <Command>[Phenology].Vernalisation.PhotopSens = 3.0</Command>
-<Command>[Leaf].FrostFraction.XYPairs.Y = 0.1, 0.1</Command>
+<Command>[Leaf].FrostFraction.XYPairs.X = -1, 0</Command>
+<Command>[Leaf].FrostFraction.XYPairs.Y = 0.1, 0</Command>
           </Cultivar>
           <Cultivar>
             <Name>Dummy3</Name>
             <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
             <Command>[Phenology].Vernalisation.PhotopSens = 3.0</Command>
-<Command>[Leaf].FrostFraction.XYPairs.Y = 0.2, 0.2</Command>
+<Command>[Leaf].FrostFraction.XYPairs.X = -1, 0</Command>
+<Command>[Leaf].FrostFraction.XYPairs.Y = 0.2, 0</Command>
           </Cultivar>
       </CultivarFolder>
       <CropType>Wheat</CropType>

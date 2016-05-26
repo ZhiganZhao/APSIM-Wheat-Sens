@@ -13,6 +13,9 @@ tryCatch({
     } else {
         apsimx <- 'mono _apsimx/Models.exe '
         file.remove(list.files('_simulation/', '*.csv', full.names = TRUE))
+        apsimx_files <- list.files('_apsimx', full.names = TRUE)
+        apsimx_files_new <- gsub('(_.*)_', '\\1', apsimx_files)
+        file.copy(apsimx_files, apsimx_files_new)
     }
     
     para <- yaml.load_file('_parameter.yml')
@@ -50,6 +53,10 @@ tryCatch({
     render_site()
     writeLines(as.yaml(navbar, indent = 4), '_navbar.yml')
     file.remove(files_tmp)
+    if (Sys.info()['sysname'] != 'Windows') {
+        file.remove(apsimx_files_new)
+    }
+    
 }, error = function(e) {
     writeLines(as.yaml(navbar, indent = 4), '_navbar.yml')
     print(e)

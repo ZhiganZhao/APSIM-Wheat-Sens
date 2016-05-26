@@ -21,6 +21,8 @@
       href: PotentialExtinctionCoeff.html
     - text: FrostFraction
       para:
+        - name: "[Leaf].FrostFraction.XYPairs.X"
+          level: ["-1, 0", "-1, 0", "-1, 0"]
         - name: "[Leaf].FrostFraction.XYPairs.Y"
-          level: ["0, 0", "0.1, 0.1", "0.2, 0.2"]
+          level: ["0, 0", "0.1, 0", "0.2, 0"]
       href: FrostFraction.html

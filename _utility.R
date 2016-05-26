@@ -97,7 +97,7 @@ plot_report <- function(df, x_var, y_cols, x_lab = x_var, y_lab = 'Value') {
     
     p <- p +
         geom_line(aes(colour = Cultivar)) +
-        geom_point(aes(colour = Cultivar))
+        geom_point(aes(colour = Cultivar), size = 1)
     if (length(x_var) > 1) {
         p <- p + facet_grid(Trait~XVar, scales = 'free_x')
     } else if (length(x_var) == 1) {

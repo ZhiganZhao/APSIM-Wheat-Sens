@@ -42,14 +42,13 @@ x_lab <- 'Accumulated thermal time or stage'
 
 ## Configuration
 
-The sensitivity analysis is conducted for parameter(s)
+The sensitivity analysis is conducted for parameter(s).
 
 ```{r para_name, results='asis'}
-
 lapply(para$para, function(x) x$name) %>% 
-    pandoc.list()
-
+    pandoc.list(style = 'ordered')
 ```
+
 
 The table below shows the values of dummy cultivars. The column name(s) only contain the last section of parameter names.
 
@@ -71,7 +70,7 @@ value <- as.data.frame(lapply(para$para, function(x) {
 
 data.frame(Cultivar = paste0('Dummy', seq(length = level_num))) %>% 
     cbind(value) %>% 
-        kable()
+        kable(align = 'r')
 
 ```
 
@@ -95,6 +94,26 @@ plot_report(
 ## Structure
 
 ## Leaf development
+
+### Leaf number
+
+
+
+```{r leaf-cohort-number, fig.asp = 1.4, fig.cap='Initialized, appeared and expanding cohort number'}
+y_cols <- c(
+            'Wheat.Leaf.ExpandingCohortNo',
+            'Wheat.Leaf.InitialisedCohortNo',
+            'Wheat.Leaf.AppearedCohortNo',
+            'Wheat.Leaf.SenescingCohortNo',
+            'Wheat.Leaf.DeadCohortNo')
+
+plot_report(df, x_var, y_cols, x_lab = x_lab, 
+            y_lab = 'Cohort number')
+
+
+```
+
+
 
 
 ```{r leaf-number, fig.asp = 1.3, fig.cap='Appeared number of green, senesced and total leaves'}

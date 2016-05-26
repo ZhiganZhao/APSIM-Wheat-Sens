@@ -93,6 +93,33 @@ plot_report(
 
 ## Structure
 
+```{r node-number, fig.cap='Primordia and node number in main stem'}
+y_cols <- c(
+    'Wheat.Structure.MainStemNodeNo', 
+    'Wheat.Structure.MainStemPrimordiaNo')
+
+plot_report(df, x_var, y_cols, x_lab = x_lab, y_lab = 'Primordia or node number in main stem')
+
+```
+
+
+```{r tiller-number, fig.asp=0.75, fig.cap='The branching rate and branch number for wheat'}
+y_cols <- c('Wheat.Structure.BranchNumber')
+
+plot_report(df, x_var, y_cols, x_lab = x_lab, y_lab = 'Branch number or branching rate')
+
+```
+
+```{r plant-population, fig.cap='The total population of main stem and all stems'}
+y_cols <- c('Wheat.Structure.TotalStemPopn')
+
+plot_report(
+    df %>% filter(Wheat.Phenology.Stage < 10),
+            x_var, y_cols, x_lab = x_lab, y_lab = 'Total population of main stem and all stems')
+
+```
+
+
 ## Leaf development
 
 ### Leaf number

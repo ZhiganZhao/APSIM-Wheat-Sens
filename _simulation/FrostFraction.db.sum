@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8; http-equiv='content-type'>
+<style>
+h2 { color:darkblue; } 
+h3 { color:darkblue; } 
+table { border:1px solid black; border-collapse:collapse; width:100%; table-layout:fixed; text-align:left; }
+table.headered {text-align:right; }
+tr.total { color:darkorange; font-weight:bold; }
+table.headered td.col1 { text-align:left; font-weight:bold; }
+td { border:1px solid; }
+th { border:1px solid; text-align:right; background-color: palegoldenrod}
+th.col1 { text-align:left; }
+</style>
+</head>
+<body>
+<h2>.15TraitModCultivarDummy1Management</h2>
+<table>
+<tr><td class='col1'>Simulation name: </td><td>15TraitModCultivarDummy1Management</td></tr>
+</table><br/>
+<br/>
+<h2>Weather</h2>
+<table>
+<tr><td class='col1'>Weather file name: </td><td>gatton-15-g3.met</td></tr>
+</table><br/>
+<br/>
+<h2>Clock</h2>
+<table>
+<tr><td class='col1'>The start date of the simulation: </td><td>2015-05-19</td></tr>
+<tr><td class='col1'>The end date of the simulation: </td><td>2015-11-17</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil</h2>
+<table>
+<tr><td class='col1'>Record number: </td><td>0</td></tr>
+<tr><td class='col1'>Soil texture or other descriptor: </td><td>Black Vertosol</td></tr>
+<tr><td class='col1'>Site: </td><td>Lawes</td></tr>
+<tr><td class='col1'>Nearest town: </td><td>Lawes, Q 4343</td></tr>
+<tr><td class='col1'>Region: </td><td>Lockyer</td></tr>
+<tr><td class='col1'>State: </td><td>Queensland</td></tr>
+<tr><td class='col1'>Country: </td><td>Australia</td></tr>
+<tr><td class='col1'>Natural vegetation: </td><td>Blue Gum, Moreton Bay Ash, Tea Tree</td></tr>
+<tr><td class='col1'>APSoil number: </td><td>38</td></tr>
+<tr><td class='col1'>Latitude (WGS84): </td><td>-27.537</td></tr>
+<tr><td class='col1'>Longitude (WGS84): </td><td>152.336</td></tr>
+<tr><td class='col1'>Location accuracy: </td><td>+-20m</td></tr>
+<tr><td class='col1'>Data source: </td><td>CSIRO Sustainable Ecosystems, Toowoomba</td></tr>
+<tr><td class='col1'>Comments: </td><td>Soil naming structure: \State\Region\Classification-Local Name (Site/district and locator number); oc and ph estimated</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Water</h2>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>BD (g/cc)</th><th>Air dry (mm/mm)</th><th>LL15 (mm/mm)</th><th>DUL (mm/mm)</th><th>SAT (mm/mm)</th><tr><td class='col1'>0-15</td><td>1.32</td><td>0.13</td><td>0.26</td><td>0.41</td><td>0.47</td></tr>
+<tr><td class='col1'>15-30</td><td>1.30</td><td>0.21</td><td>0.26</td><td>0.43</td><td>0.48</td></tr>
+<tr><td class='col1'>30-60</td><td>1.23</td><td>0.26</td><td>0.26</td><td>0.46</td><td>0.51</td></tr>
+<tr><td class='col1'>60-90</td><td>1.27</td><td>0.26</td><td>0.26</td><td>0.44</td><td>0.49</td></tr>
+<tr><td class='col1'>90-120</td><td>1.37</td><td>0.25</td><td>0.25</td><td>0.40</td><td>0.45</td></tr>
+<tr><td class='col1'>120-150</td><td>1.35</td><td>0.26</td><td>0.26</td><td>0.41</td><td>0.46</td></tr>
+<tr><td class='col1'>150-180</td><td>1.35</td><td>0.26</td><td>0.26</td><td>0.38</td><td>0.46</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Water.WheatSoil</h2>
+<table class='headered'>
+<tr><th class='col1'>Wheat Depth (cm)</th><th>Wheat LL (mm/mm)</th><th>Wheat PAWC (mm)</th><th>Wheat KL (mm/mm)</th><th>Wheat XF (mm/mm)</th><tr><td class='col1'>0-15</td><td>0.26</td><td>22.5</td><td>0.06</td><td>1.0</td></tr>
+<tr><td class='col1'>15-30</td><td>0.26</td><td>25.5</td><td>0.06</td><td>1.0</td></tr>
+<tr><td class='col1'>30-60</td><td>0.26</td><td>60.0</td><td>0.06</td><td>1.0</td></tr>
+<tr><td class='col1'>60-90</td><td>0.26</td><td>54.0</td><td>0.04</td><td>1.0</td></tr>
+<tr><td class='col1'>90-120</td><td>0.25</td><td>45.0</td><td>0.04</td><td>1.0</td></tr>
+<tr><td class='col1'>120-150</td><td>0.29</td><td>36.0</td><td>0.02</td><td>1.0</td></tr>
+<tr><td class='col1'>150-180</td><td>0.36</td><td>6.0</td><td>0.02</td><td>1.0</td></tr>
+<tr class='total'><td class='col1'>Total</td><td></td><td>249.0</td><td></td><td></td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.SoilOrganicMatter</h2>
+<table>
+<tr><td class='col1'>Root C:N ratio: </td><td>40.000</td></tr>
+<tr><td class='col1'>Root Weight (kg/ha): </td><td>1000.000</td></tr>
+<tr><td class='col1'>Soil C:N ratio: </td><td>12.000</td></tr>
+<tr><td class='col1'>Erosion enrichment coefficient A: </td><td>7.400</td></tr>
+<tr><td class='col1'>Erosion enrichment coefficient B: </td><td>0.200</td></tr>
+</table><br/>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>OC (Total %)</th><th>FBiom (0-1)</th><th>FInert (0-1)</th><tr><td class='col1'>0-15</td><td>0.95</td><td>0.04</td><td>0.4</td></tr>
+<tr><td class='col1'>15-30</td><td>0.95</td><td>0.02</td><td>0.6</td></tr>
+<tr><td class='col1'>30-60</td><td>0.96</td><td>0.02</td><td>0.8</td></tr>
+<tr><td class='col1'>60-90</td><td>0.85</td><td>0.02</td><td>1</td></tr>
+<tr><td class='col1'>90-120</td><td>0.55</td><td>0.01</td><td>1</td></tr>
+<tr><td class='col1'>120-150</td><td>0.26</td><td>0.01</td><td>1</td></tr>
+<tr><td class='col1'>150-180</td><td>0.20</td><td>0.01</td><td>1</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Analysis</h2>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>PH (1:5 water)</th><tr><td class='col1'>0-15</td><td>8.0</td></tr>
+<tr><td class='col1'>15-30</td><td>8.0</td></tr>
+<tr><td class='col1'>30-60</td><td>8.0</td></tr>
+<tr><td class='col1'>60-90</td><td>8.0</td></tr>
+<tr><td class='col1'>90-120</td><td>8.0</td></tr>
+<tr><td class='col1'>120-150</td><td>8.0</td></tr>
+<tr><td class='col1'>150-180</td><td>8.0</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.InitialWater</h2>
+<table>
+<tr><td class='col1'>Fraction full: </td><td>1.000</td></tr>
+<tr><td class='col1'>Depth of wet soil: </td><td>NaN</td></tr>
+<tr><td class='col1'>Plant available water: </td><td>288.000 (mm)</td></tr>
+<tr><td class='col1'>Relative to: </td><td>LL15</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Initial nitrogen</h2>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>NO3kgha</th><th>NH4kgha</th><tr><td class='col1'>0-20</td><td>20.0</td><td>1.0</td></tr>
+<tr><td class='col1'>20-200</td><td>12.0</td><td>1.0</td></tr>
+</table><br/>
+<br/>
+<h2>Field.SurfaceOrganicMatter</h2>
+<table>
+<tr><td class='col1'>Surface organic matter pool name: </td><td>wheat_stubble</td></tr>
+<tr><td class='col1'>Surface organic matter pool type: </td><td>Wheat</td></tr>
+<tr><td class='col1'>Mass of surface residue (kg/ha): </td><td>0 (kg/ha)</td></tr>
+<tr><td class='col1'>Standing fraction (0-1): </td><td>0 (0-1)</td></tr>
+<tr><td class='col1'>Carbon:Phosphorus ratio (g/g): </td><td>0 (g/g)</td></tr>
+<tr><td class='col1'>Carbon:Nitrogen ratio (g/g): </td><td>80 (g/g)</td></tr>
+<tr><td class='col1'>Carbon content: </td><td>0.000 (kg/ha)</td></tr>
+<tr><td class='col1'>Nitrogen content: </td><td>0.000 (kg/ha)</td></tr>
+<tr><td class='col1'>Phosphorus content: </td><td>0.000 (kg/ha)</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Report</h2>
+<table class='headered'>
+<tr><th class='col1'>Output variables</th><th>Output frequency</th><tr><td class='col1'>Name as ZoneName</td><td>[Clock].DoReport</td></tr>
+<tr><td class='col1'>[Clock].Today</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.DaysAfterSowing</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.ThermalTime.Value as Wheat.Phenology.ThermalTime</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.AccumulateThermalTime.Value as Wheat.Phenology.AccumulateThermalTime</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.CurrentPhaseName</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.CurrentStageName</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.Stage</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemPrimordiaNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.PlantTotalNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.InitialiseStage</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemFinalNodeNumber</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.BranchNumber</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.RemainingNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.DeltaNodeNumber</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.ProportionBranchMortality</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.ProportionPlantMortality</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.BranchingRate.Value as Wheat.Structure.BranchingRate</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.BranchMortality.Value as Wheat.Structure.BranchMortality</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.PrimaryBudNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.PrimaryBudTotalNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemPopn</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.TotalStemPopn</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MeanTillerGrowthRate.Value as Wheat.Structure.MeanTillerGrowthRate</td><td></td></tr>
+<tr><td class='col1'>Wheat.Arbitrator.FN</td><td></td></tr>
+<tr><td class='col1'>Wheat.Arbitrator.DMSupply</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CohortAge[1:10]</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.AppearedCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.InitialisedCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.ExpandingCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.GreenCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.SenescingCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.DeadCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.PlantAppearedGreenLeafNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.PlantAppearedLeafNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.PlantsenescedLeafNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.LAI</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.LAIDead</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.LAITotal</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CoverDead</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CoverGreen</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CoverTotal</td><td></td></tr>
+</table><br/>
+<br/>
+<h2>Simulation log:</h2>
+<h3>2015-05-21 Field.Wheat</h3>
+<pre>
+A crop of Wheat (cultivar = Dummy1) was sown today at a population of 150 plants/m2 with 1 buds per plant at a row spacing of 250 and a depth of 40 mm
+
+</pre>
+<h3>2015-05-21 Field.Fertiliser</h3>
+<pre>
+205 kg/ha of Urea added at depth 0 layer 1
+
+</pre>
+<h3>2015-05-22 Field.Irrigation</h3>
+<pre>
+24.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-05-22 Field.Wheat</h3>
+<pre>
+Germination
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-05-28 Field.Wheat</h3>
+<pre>
+Emergence
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-06-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-14 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-17 Field.Wheat</h3>
+<pre>
+TerminalSpikelet
+  LAI = 4.93 (m^2/m^2)
+  Above Ground Biomass = 239.93 (g/m^2)
+
+
+</pre>
+<h3>2015-07-31 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-09 Field.Wheat</h3>
+<pre>
+FlagLeaf
+  LAI = 8.57 (m^2/m^2)
+  Above Ground Biomass = 567.94 (g/m^2)
+
+
+</pre>
+<h3>2015-08-14 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-28 Field.Wheat</h3>
+<pre>
+Flowering
+  LAI = 5.77 (m^2/m^2)
+  Above Ground Biomass = 836.69 (g/m^2)
+
+
+</pre>
+<h3>2015-09-04 Field.Wheat</h3>
+<pre>
+StartGrainFill
+  LAI = 4.75 (m^2/m^2)
+  Above Ground Biomass = 1007.81 (g/m^2)
+
+
+</pre>
+<h3>2015-09-09 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-10-06 Field.Wheat</h3>
+<pre>
+EndGrainFill
+  LAI = 0.22 (m^2/m^2)
+  Above Ground Biomass = 1351.98 (g/m^2)
+
+
+</pre>
+<h3>2015-10-08 Field.Wheat</h3>
+<pre>
+Maturity
+  LAI = 0.14 (m^2/m^2)
+  Above Ground Biomass = 1355.05 (g/m^2)
+
+
+</pre>
+<h3>2015-10-24 Field.Wheat</h3>
+<pre>
+HarvestRipe
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 1356.57 (g/m^2)
+
+
+</pre>
+<h3>2015-11-18 Clock</h3>
+<pre>
+Simulation terminated normally
+
+</pre>
+</body>
+</html>
+
+
+############################################################################
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8; http-equiv='content-type'>
+<style>
+h2 { color:darkblue; } 
+h3 { color:darkblue; } 
+table { border:1px solid black; border-collapse:collapse; width:100%; table-layout:fixed; text-align:left; }
+table.headered {text-align:right; }
+tr.total { color:darkorange; font-weight:bold; }
+table.headered td.col1 { text-align:left; font-weight:bold; }
+td { border:1px solid; }
+th { border:1px solid; text-align:right; background-color: palegoldenrod}
+th.col1 { text-align:left; }
+</style>
+</head>
+<body>
+<h2>.15TraitModCultivarDummy2Management</h2>
+<table>
+<tr><td class='col1'>Simulation name: </td><td>15TraitModCultivarDummy2Management</td></tr>
+</table><br/>
+<br/>
+<h2>Weather</h2>
+<table>
+<tr><td class='col1'>Weather file name: </td><td>gatton-15-g3.met</td></tr>
+</table><br/>
+<br/>
+<h2>Clock</h2>
+<table>
+<tr><td class='col1'>The start date of the simulation: </td><td>2015-05-19</td></tr>
+<tr><td class='col1'>The end date of the simulation: </td><td>2015-11-17</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil</h2>
+<table>
+<tr><td class='col1'>Record number: </td><td>0</td></tr>
+<tr><td class='col1'>Soil texture or other descriptor: </td><td>Black Vertosol</td></tr>
+<tr><td class='col1'>Site: </td><td>Lawes</td></tr>
+<tr><td class='col1'>Nearest town: </td><td>Lawes, Q 4343</td></tr>
+<tr><td class='col1'>Region: </td><td>Lockyer</td></tr>
+<tr><td class='col1'>State: </td><td>Queensland</td></tr>
+<tr><td class='col1'>Country: </td><td>Australia</td></tr>
+<tr><td class='col1'>Natural vegetation: </td><td>Blue Gum, Moreton Bay Ash, Tea Tree</td></tr>
+<tr><td class='col1'>APSoil number: </td><td>38</td></tr>
+<tr><td class='col1'>Latitude (WGS84): </td><td>-27.537</td></tr>
+<tr><td class='col1'>Longitude (WGS84): </td><td>152.336</td></tr>
+<tr><td class='col1'>Location accuracy: </td><td>+-20m</td></tr>
+<tr><td class='col1'>Data source: </td><td>CSIRO Sustainable Ecosystems, Toowoomba</td></tr>
+<tr><td class='col1'>Comments: </td><td>Soil naming structure: \State\Region\Classification-Local Name (Site/district and locator number); oc and ph estimated</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Water</h2>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>BD (g/cc)</th><th>Air dry (mm/mm)</th><th>LL15 (mm/mm)</th><th>DUL (mm/mm)</th><th>SAT (mm/mm)</th><tr><td class='col1'>0-15</td><td>1.32</td><td>0.13</td><td>0.26</td><td>0.41</td><td>0.47</td></tr>
+<tr><td class='col1'>15-30</td><td>1.30</td><td>0.21</td><td>0.26</td><td>0.43</td><td>0.48</td></tr>
+<tr><td class='col1'>30-60</td><td>1.23</td><td>0.26</td><td>0.26</td><td>0.46</td><td>0.51</td></tr>
+<tr><td class='col1'>60-90</td><td>1.27</td><td>0.26</td><td>0.26</td><td>0.44</td><td>0.49</td></tr>
+<tr><td class='col1'>90-120</td><td>1.37</td><td>0.25</td><td>0.25</td><td>0.40</td><td>0.45</td></tr>
+<tr><td class='col1'>120-150</td><td>1.35</td><td>0.26</td><td>0.26</td><td>0.41</td><td>0.46</td></tr>
+<tr><td class='col1'>150-180</td><td>1.35</td><td>0.26</td><td>0.26</td><td>0.38</td><td>0.46</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Water.WheatSoil</h2>
+<table class='headered'>
+<tr><th class='col1'>Wheat Depth (cm)</th><th>Wheat LL (mm/mm)</th><th>Wheat PAWC (mm)</th><th>Wheat KL (mm/mm)</th><th>Wheat XF (mm/mm)</th><tr><td class='col1'>0-15</td><td>0.26</td><td>22.5</td><td>0.06</td><td>1.0</td></tr>
+<tr><td class='col1'>15-30</td><td>0.26</td><td>25.5</td><td>0.06</td><td>1.0</td></tr>
+<tr><td class='col1'>30-60</td><td>0.26</td><td>60.0</td><td>0.06</td><td>1.0</td></tr>
+<tr><td class='col1'>60-90</td><td>0.26</td><td>54.0</td><td>0.04</td><td>1.0</td></tr>
+<tr><td class='col1'>90-120</td><td>0.25</td><td>45.0</td><td>0.04</td><td>1.0</td></tr>
+<tr><td class='col1'>120-150</td><td>0.29</td><td>36.0</td><td>0.02</td><td>1.0</td></tr>
+<tr><td class='col1'>150-180</td><td>0.36</td><td>6.0</td><td>0.02</td><td>1.0</td></tr>
+<tr class='total'><td class='col1'>Total</td><td></td><td>249.0</td><td></td><td></td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.SoilOrganicMatter</h2>
+<table>
+<tr><td class='col1'>Root C:N ratio: </td><td>40.000</td></tr>
+<tr><td class='col1'>Root Weight (kg/ha): </td><td>1000.000</td></tr>
+<tr><td class='col1'>Soil C:N ratio: </td><td>12.000</td></tr>
+<tr><td class='col1'>Erosion enrichment coefficient A: </td><td>7.400</td></tr>
+<tr><td class='col1'>Erosion enrichment coefficient B: </td><td>0.200</td></tr>
+</table><br/>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>OC (Total %)</th><th>FBiom (0-1)</th><th>FInert (0-1)</th><tr><td class='col1'>0-15</td><td>0.95</td><td>0.04</td><td>0.4</td></tr>
+<tr><td class='col1'>15-30</td><td>0.95</td><td>0.02</td><td>0.6</td></tr>
+<tr><td class='col1'>30-60</td><td>0.96</td><td>0.02</td><td>0.8</td></tr>
+<tr><td class='col1'>60-90</td><td>0.85</td><td>0.02</td><td>1</td></tr>
+<tr><td class='col1'>90-120</td><td>0.55</td><td>0.01</td><td>1</td></tr>
+<tr><td class='col1'>120-150</td><td>0.26</td><td>0.01</td><td>1</td></tr>
+<tr><td class='col1'>150-180</td><td>0.20</td><td>0.01</td><td>1</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Analysis</h2>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>PH (1:5 water)</th><tr><td class='col1'>0-15</td><td>8.0</td></tr>
+<tr><td class='col1'>15-30</td><td>8.0</td></tr>
+<tr><td class='col1'>30-60</td><td>8.0</td></tr>
+<tr><td class='col1'>60-90</td><td>8.0</td></tr>
+<tr><td class='col1'>90-120</td><td>8.0</td></tr>
+<tr><td class='col1'>120-150</td><td>8.0</td></tr>
+<tr><td class='col1'>150-180</td><td>8.0</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.InitialWater</h2>
+<table>
+<tr><td class='col1'>Fraction full: </td><td>1.000</td></tr>
+<tr><td class='col1'>Depth of wet soil: </td><td>NaN</td></tr>
+<tr><td class='col1'>Plant available water: </td><td>288.000 (mm)</td></tr>
+<tr><td class='col1'>Relative to: </td><td>LL15</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Initial nitrogen</h2>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>NO3kgha</th><th>NH4kgha</th><tr><td class='col1'>0-20</td><td>20.0</td><td>1.0</td></tr>
+<tr><td class='col1'>20-200</td><td>12.0</td><td>1.0</td></tr>
+</table><br/>
+<br/>
+<h2>Field.SurfaceOrganicMatter</h2>
+<table>
+<tr><td class='col1'>Surface organic matter pool name: </td><td>wheat_stubble</td></tr>
+<tr><td class='col1'>Surface organic matter pool type: </td><td>Wheat</td></tr>
+<tr><td class='col1'>Mass of surface residue (kg/ha): </td><td>0 (kg/ha)</td></tr>
+<tr><td class='col1'>Standing fraction (0-1): </td><td>0 (0-1)</td></tr>
+<tr><td class='col1'>Carbon:Phosphorus ratio (g/g): </td><td>0 (g/g)</td></tr>
+<tr><td class='col1'>Carbon:Nitrogen ratio (g/g): </td><td>80 (g/g)</td></tr>
+<tr><td class='col1'>Carbon content: </td><td>0.000 (kg/ha)</td></tr>
+<tr><td class='col1'>Nitrogen content: </td><td>0.000 (kg/ha)</td></tr>
+<tr><td class='col1'>Phosphorus content: </td><td>0.000 (kg/ha)</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Report</h2>
+<table class='headered'>
+<tr><th class='col1'>Output variables</th><th>Output frequency</th><tr><td class='col1'>Name as ZoneName</td><td>[Clock].DoReport</td></tr>
+<tr><td class='col1'>[Clock].Today</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.DaysAfterSowing</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.ThermalTime.Value as Wheat.Phenology.ThermalTime</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.AccumulateThermalTime.Value as Wheat.Phenology.AccumulateThermalTime</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.CurrentPhaseName</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.CurrentStageName</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.Stage</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemPrimordiaNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.PlantTotalNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.InitialiseStage</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemFinalNodeNumber</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.BranchNumber</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.RemainingNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.DeltaNodeNumber</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.ProportionBranchMortality</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.ProportionPlantMortality</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.BranchingRate.Value as Wheat.Structure.BranchingRate</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.BranchMortality.Value as Wheat.Structure.BranchMortality</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.PrimaryBudNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.PrimaryBudTotalNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemPopn</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.TotalStemPopn</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MeanTillerGrowthRate.Value as Wheat.Structure.MeanTillerGrowthRate</td><td></td></tr>
+<tr><td class='col1'>Wheat.Arbitrator.FN</td><td></td></tr>
+<tr><td class='col1'>Wheat.Arbitrator.DMSupply</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CohortAge[1:10]</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.AppearedCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.InitialisedCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.ExpandingCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.GreenCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.SenescingCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.DeadCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.PlantAppearedGreenLeafNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.PlantAppearedLeafNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.PlantsenescedLeafNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.LAI</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.LAIDead</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.LAITotal</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CoverDead</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CoverGreen</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CoverTotal</td><td></td></tr>
+</table><br/>
+<br/>
+<h2>Simulation log:</h2>
+<h3>2015-05-21 Field.Wheat</h3>
+<pre>
+A crop of Wheat (cultivar = Dummy2) was sown today at a population of 150 plants/m2 with 1 buds per plant at a row spacing of 250 and a depth of 40 mm
+
+</pre>
+<h3>2015-05-21 Field.Fertiliser</h3>
+<pre>
+205 kg/ha of Urea added at depth 0 layer 1
+
+</pre>
+<h3>2015-05-22 Field.Irrigation</h3>
+<pre>
+24.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-05-22 Field.Wheat</h3>
+<pre>
+Germination
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-05-28 Field.Wheat</h3>
+<pre>
+Emergence
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-06-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-14 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-17 Field.Wheat</h3>
+<pre>
+TerminalSpikelet
+  LAI = 0.49 (m^2/m^2)
+  Above Ground Biomass = 42.75 (g/m^2)
+
+
+</pre>
+<h3>2015-07-31 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-09 Field.Wheat</h3>
+<pre>
+FlagLeaf
+  LAI = 1.26 (m^2/m^2)
+  Above Ground Biomass = 186.68 (g/m^2)
+
+
+</pre>
+<h3>2015-08-14 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-28 Field.Wheat</h3>
+<pre>
+Flowering
+  LAI = 0.28 (m^2/m^2)
+  Above Ground Biomass = 304.97 (g/m^2)
+
+
+</pre>
+<h3>2015-09-04 Field.Wheat</h3>
+<pre>
+StartGrainFill
+  LAI = 0.13 (m^2/m^2)
+  Above Ground Biomass = 322.02 (g/m^2)
+
+
+</pre>
+<h3>2015-09-09 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-10-06 Field.Wheat</h3>
+<pre>
+EndGrainFill
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 336.12 (g/m^2)
+
+
+</pre>
+<h3>2015-10-08 Field.Wheat</h3>
+<pre>
+Maturity
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 336.14 (g/m^2)
+
+
+</pre>
+<h3>2015-10-24 Field.Wheat</h3>
+<pre>
+HarvestRipe
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 336.15 (g/m^2)
+
+
+</pre>
+<h3>2015-11-18 Clock</h3>
+<pre>
+Simulation terminated normally
+
+</pre>
+</body>
+</html>
+
+
+############################################################################
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8; http-equiv='content-type'>
+<style>
+h2 { color:darkblue; } 
+h3 { color:darkblue; } 
+table { border:1px solid black; border-collapse:collapse; width:100%; table-layout:fixed; text-align:left; }
+table.headered {text-align:right; }
+tr.total { color:darkorange; font-weight:bold; }
+table.headered td.col1 { text-align:left; font-weight:bold; }
+td { border:1px solid; }
+th { border:1px solid; text-align:right; background-color: palegoldenrod}
+th.col1 { text-align:left; }
+</style>
+</head>
+<body>
+<h2>.15TraitModCultivarDummy3Management</h2>
+<table>
+<tr><td class='col1'>Simulation name: </td><td>15TraitModCultivarDummy3Management</td></tr>
+</table><br/>
+<br/>
+<h2>Weather</h2>
+<table>
+<tr><td class='col1'>Weather file name: </td><td>gatton-15-g3.met</td></tr>
+</table><br/>
+<br/>
+<h2>Clock</h2>
+<table>
+<tr><td class='col1'>The start date of the simulation: </td><td>2015-05-19</td></tr>
+<tr><td class='col1'>The end date of the simulation: </td><td>2015-11-17</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil</h2>
+<table>
+<tr><td class='col1'>Record number: </td><td>0</td></tr>
+<tr><td class='col1'>Soil texture or other descriptor: </td><td>Black Vertosol</td></tr>
+<tr><td class='col1'>Site: </td><td>Lawes</td></tr>
+<tr><td class='col1'>Nearest town: </td><td>Lawes, Q 4343</td></tr>
+<tr><td class='col1'>Region: </td><td>Lockyer</td></tr>
+<tr><td class='col1'>State: </td><td>Queensland</td></tr>
+<tr><td class='col1'>Country: </td><td>Australia</td></tr>
+<tr><td class='col1'>Natural vegetation: </td><td>Blue Gum, Moreton Bay Ash, Tea Tree</td></tr>
+<tr><td class='col1'>APSoil number: </td><td>38</td></tr>
+<tr><td class='col1'>Latitude (WGS84): </td><td>-27.537</td></tr>
+<tr><td class='col1'>Longitude (WGS84): </td><td>152.336</td></tr>
+<tr><td class='col1'>Location accuracy: </td><td>+-20m</td></tr>
+<tr><td class='col1'>Data source: </td><td>CSIRO Sustainable Ecosystems, Toowoomba</td></tr>
+<tr><td class='col1'>Comments: </td><td>Soil naming structure: \State\Region\Classification-Local Name (Site/district and locator number); oc and ph estimated</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Water</h2>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>BD (g/cc)</th><th>Air dry (mm/mm)</th><th>LL15 (mm/mm)</th><th>DUL (mm/mm)</th><th>SAT (mm/mm)</th><tr><td class='col1'>0-15</td><td>1.32</td><td>0.13</td><td>0.26</td><td>0.41</td><td>0.47</td></tr>
+<tr><td class='col1'>15-30</td><td>1.30</td><td>0.21</td><td>0.26</td><td>0.43</td><td>0.48</td></tr>
+<tr><td class='col1'>30-60</td><td>1.23</td><td>0.26</td><td>0.26</td><td>0.46</td><td>0.51</td></tr>
+<tr><td class='col1'>60-90</td><td>1.27</td><td>0.26</td><td>0.26</td><td>0.44</td><td>0.49</td></tr>
+<tr><td class='col1'>90-120</td><td>1.37</td><td>0.25</td><td>0.25</td><td>0.40</td><td>0.45</td></tr>
+<tr><td class='col1'>120-150</td><td>1.35</td><td>0.26</td><td>0.26</td><td>0.41</td><td>0.46</td></tr>
+<tr><td class='col1'>150-180</td><td>1.35</td><td>0.26</td><td>0.26</td><td>0.38</td><td>0.46</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Water.WheatSoil</h2>
+<table class='headered'>
+<tr><th class='col1'>Wheat Depth (cm)</th><th>Wheat LL (mm/mm)</th><th>Wheat PAWC (mm)</th><th>Wheat KL (mm/mm)</th><th>Wheat XF (mm/mm)</th><tr><td class='col1'>0-15</td><td>0.26</td><td>22.5</td><td>0.06</td><td>1.0</td></tr>
+<tr><td class='col1'>15-30</td><td>0.26</td><td>25.5</td><td>0.06</td><td>1.0</td></tr>
+<tr><td class='col1'>30-60</td><td>0.26</td><td>60.0</td><td>0.06</td><td>1.0</td></tr>
+<tr><td class='col1'>60-90</td><td>0.26</td><td>54.0</td><td>0.04</td><td>1.0</td></tr>
+<tr><td class='col1'>90-120</td><td>0.25</td><td>45.0</td><td>0.04</td><td>1.0</td></tr>
+<tr><td class='col1'>120-150</td><td>0.29</td><td>36.0</td><td>0.02</td><td>1.0</td></tr>
+<tr><td class='col1'>150-180</td><td>0.36</td><td>6.0</td><td>0.02</td><td>1.0</td></tr>
+<tr class='total'><td class='col1'>Total</td><td></td><td>249.0</td><td></td><td></td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.SoilOrganicMatter</h2>
+<table>
+<tr><td class='col1'>Root C:N ratio: </td><td>40.000</td></tr>
+<tr><td class='col1'>Root Weight (kg/ha): </td><td>1000.000</td></tr>
+<tr><td class='col1'>Soil C:N ratio: </td><td>12.000</td></tr>
+<tr><td class='col1'>Erosion enrichment coefficient A: </td><td>7.400</td></tr>
+<tr><td class='col1'>Erosion enrichment coefficient B: </td><td>0.200</td></tr>
+</table><br/>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>OC (Total %)</th><th>FBiom (0-1)</th><th>FInert (0-1)</th><tr><td class='col1'>0-15</td><td>0.95</td><td>0.04</td><td>0.4</td></tr>
+<tr><td class='col1'>15-30</td><td>0.95</td><td>0.02</td><td>0.6</td></tr>
+<tr><td class='col1'>30-60</td><td>0.96</td><td>0.02</td><td>0.8</td></tr>
+<tr><td class='col1'>60-90</td><td>0.85</td><td>0.02</td><td>1</td></tr>
+<tr><td class='col1'>90-120</td><td>0.55</td><td>0.01</td><td>1</td></tr>
+<tr><td class='col1'>120-150</td><td>0.26</td><td>0.01</td><td>1</td></tr>
+<tr><td class='col1'>150-180</td><td>0.20</td><td>0.01</td><td>1</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Analysis</h2>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>PH (1:5 water)</th><tr><td class='col1'>0-15</td><td>8.0</td></tr>
+<tr><td class='col1'>15-30</td><td>8.0</td></tr>
+<tr><td class='col1'>30-60</td><td>8.0</td></tr>
+<tr><td class='col1'>60-90</td><td>8.0</td></tr>
+<tr><td class='col1'>90-120</td><td>8.0</td></tr>
+<tr><td class='col1'>120-150</td><td>8.0</td></tr>
+<tr><td class='col1'>150-180</td><td>8.0</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.InitialWater</h2>
+<table>
+<tr><td class='col1'>Fraction full: </td><td>1.000</td></tr>
+<tr><td class='col1'>Depth of wet soil: </td><td>NaN</td></tr>
+<tr><td class='col1'>Plant available water: </td><td>288.000 (mm)</td></tr>
+<tr><td class='col1'>Relative to: </td><td>LL15</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Soil.Initial nitrogen</h2>
+<table class='headered'>
+<tr><th class='col1'>Depth (cm)</th><th>NO3kgha</th><th>NH4kgha</th><tr><td class='col1'>0-20</td><td>20.0</td><td>1.0</td></tr>
+<tr><td class='col1'>20-200</td><td>12.0</td><td>1.0</td></tr>
+</table><br/>
+<br/>
+<h2>Field.SurfaceOrganicMatter</h2>
+<table>
+<tr><td class='col1'>Surface organic matter pool name: </td><td>wheat_stubble</td></tr>
+<tr><td class='col1'>Surface organic matter pool type: </td><td>Wheat</td></tr>
+<tr><td class='col1'>Mass of surface residue (kg/ha): </td><td>0 (kg/ha)</td></tr>
+<tr><td class='col1'>Standing fraction (0-1): </td><td>0 (0-1)</td></tr>
+<tr><td class='col1'>Carbon:Phosphorus ratio (g/g): </td><td>0 (g/g)</td></tr>
+<tr><td class='col1'>Carbon:Nitrogen ratio (g/g): </td><td>80 (g/g)</td></tr>
+<tr><td class='col1'>Carbon content: </td><td>0.000 (kg/ha)</td></tr>
+<tr><td class='col1'>Nitrogen content: </td><td>0.000 (kg/ha)</td></tr>
+<tr><td class='col1'>Phosphorus content: </td><td>0.000 (kg/ha)</td></tr>
+</table><br/>
+<br/>
+<h2>Field.Report</h2>
+<table class='headered'>
+<tr><th class='col1'>Output variables</th><th>Output frequency</th><tr><td class='col1'>Name as ZoneName</td><td>[Clock].DoReport</td></tr>
+<tr><td class='col1'>[Clock].Today</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.DaysAfterSowing</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.ThermalTime.Value as Wheat.Phenology.ThermalTime</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.AccumulateThermalTime.Value as Wheat.Phenology.AccumulateThermalTime</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.CurrentPhaseName</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.CurrentStageName</td><td></td></tr>
+<tr><td class='col1'>Wheat.Phenology.Stage</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemPrimordiaNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.PlantTotalNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.InitialiseStage</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemFinalNodeNumber</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.BranchNumber</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.RemainingNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.DeltaNodeNumber</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.ProportionBranchMortality</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.ProportionPlantMortality</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.BranchingRate.Value as Wheat.Structure.BranchingRate</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.BranchMortality.Value as Wheat.Structure.BranchMortality</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.PrimaryBudNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.PrimaryBudTotalNodeNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MainStemPopn</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.TotalStemPopn</td><td></td></tr>
+<tr><td class='col1'>Wheat.Structure.MeanTillerGrowthRate.Value as Wheat.Structure.MeanTillerGrowthRate</td><td></td></tr>
+<tr><td class='col1'>Wheat.Arbitrator.FN</td><td></td></tr>
+<tr><td class='col1'>Wheat.Arbitrator.DMSupply</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CohortAge[1:10]</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.AppearedCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.InitialisedCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.ExpandingCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.GreenCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.SenescingCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.DeadCohortNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.PlantAppearedGreenLeafNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.PlantAppearedLeafNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.PlantsenescedLeafNo</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.LAI</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.LAIDead</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.LAITotal</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CoverDead</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CoverGreen</td><td></td></tr>
+<tr><td class='col1'>Wheat.Leaf.CoverTotal</td><td></td></tr>
+</table><br/>
+<br/>
+<h2>Simulation log:</h2>
+<h3>2015-05-21 Field.Wheat</h3>
+<pre>
+A crop of Wheat (cultivar = Dummy3) was sown today at a population of 150 plants/m2 with 1 buds per plant at a row spacing of 250 and a depth of 40 mm
+
+</pre>
+<h3>2015-05-21 Field.Fertiliser</h3>
+<pre>
+205 kg/ha of Urea added at depth 0 layer 1
+
+</pre>
+<h3>2015-05-22 Field.Irrigation</h3>
+<pre>
+24.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-05-22 Field.Wheat</h3>
+<pre>
+Germination
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-05-28 Field.Wheat</h3>
+<pre>
+Emergence
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-06-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-14 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-17 Field.Wheat</h3>
+<pre>
+TerminalSpikelet
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 4.98 (g/m^2)
+
+
+</pre>
+<h3>2015-07-31 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-09 Field.Wheat</h3>
+<pre>
+FlagLeaf
+  LAI = 0.01 (m^2/m^2)
+  Above Ground Biomass = 5.80 (g/m^2)
+
+
+</pre>
+<h3>2015-08-14 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-28 Field.Wheat</h3>
+<pre>
+Flowering
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 7.12 (g/m^2)
+
+
+</pre>
+<h3>2015-09-04 Field.Wheat</h3>
+<pre>
+StartGrainFill
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 7.15 (g/m^2)
+
+
+</pre>
+<h3>2015-09-09 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-10-06 Field.Wheat</h3>
+<pre>
+EndGrainFill
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 7.16 (g/m^2)
+
+
+</pre>
+<h3>2015-10-08 Field.Wheat</h3>
+<pre>
+Maturity
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 7.16 (g/m^2)
+
+
+</pre>
+<h3>2015-10-24 Field.Wheat</h3>
+<pre>
+HarvestRipe
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 7.16 (g/m^2)
+
+
+</pre>
+<h3>2015-11-18 Clock</h3>
+<pre>
+Simulation terminated normally
+
+</pre>
+</body>
+</html>
+
+
+############################################################################

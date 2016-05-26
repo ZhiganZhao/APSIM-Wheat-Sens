@@ -1,3 +1,4 @@
+rm(list = ls())
 library(rmarkdown)
 library(yaml)
 source('_utility.R')
@@ -42,7 +43,7 @@ tryCatch({
 }, error = function(e) {
     writeLines(as.yaml(navbar, indent = 4), '_navbar.yml')
     print(e)
-    if (Sys.info()['sysname'] != 'windows') {
+    if (Sys.info()['sysname'] != 'Windows') {
         quit(save = "no", status = 100, runLast = FALSE)
     }
 })

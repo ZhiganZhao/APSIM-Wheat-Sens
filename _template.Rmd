@@ -10,8 +10,10 @@ title: `r params$para$text`: Sensitivity analysis
 
 # `r params$para$text`: Sensitivity analysis
 
+
 ```{r setup, message=FALSE, echo=FALSE, warning=FALSE}
 library(knitr)
+library(pander)
 opts_chunk$set(
     cache = FALSE, echo = FALSE, 
     out.width = '100%', fig.asp = 1,
@@ -37,7 +39,20 @@ x_var <- c(
 x_lab <- 'Accumulated thermal time or stage'
 
 ```
+
 ## Configuration
+
+The sensitivity analysis is conducted for parameter(s)
+
+```{r para_name, results='asis'}
+
+lapply(para$para, function(x) x$name) %>% 
+    pandoc.list()
+
+```
+
+The table below shows the values of dummy cultivars. The column name(s) only contain the last section of parameter names.
+
 
 ```{r configuration}
 
@@ -49,7 +64,8 @@ level_num <- levels[1]
 
 value <- as.data.frame(lapply(para$para, function(x) {
     y <- list()
-    y[[x$name]] <- x$level
+    name <- gsub('.*\\.(.*)', '\\1', x$name)
+    y[[name]] <- x$level
     y
 }))
 

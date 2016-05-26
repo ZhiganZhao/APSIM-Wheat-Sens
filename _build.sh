@@ -18,8 +18,6 @@ else
     echo "no files found"
 fi
 
-sudo apt-get install -y mono-complete
-
 
 Rscript _generate-gh-pages.R
 git add *

@@ -5,10 +5,10 @@ params:
 ---
 
 ---
-title: `r params$para$text`: Sensitivity analysis
+title: `r params$para$text`
 ---
 
-# `r params$para$text`: Sensitivity analysis
+# `r params$para$text`
 
 
 ```{r setup, message=FALSE, echo=FALSE, warning=FALSE}

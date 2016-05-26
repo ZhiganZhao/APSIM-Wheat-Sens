@@ -12,7 +12,7 @@ tryCatch({
         apsimx <- 'C:/Users/zhe00a/Documents/Working/04-Software/032-ApsimX/ApsimX/Bin/Models.exe'
     } else {
         apsimx <- 'mono _apsimx/Models.exe '
-        file.remove(list.files('_simulation/', '*.csv', full.names = TRUE))
+        # file.remove(list.files('_simulation/', '*.csv', full.names = TRUE))
         apsimx_files <- list.files('_apsimx', full.names = TRUE)
         apsimx_files_new <- gsub('(_.*)_', '\\1', apsimx_files)
         file.copy(apsimx_files, apsimx_files_new)
@@ -22,6 +22,11 @@ tryCatch({
     
     navbar_new <- navbar
     navbar_new$left <- c(navbar_new$left, para)
+    
+    # Check whether rerun simulations
+    git_diff <- system('git diff --name-only', intern = TRUE) 
+    rerun <- ifelse(length(grep('sensitivity|_parameter', git_diff)) == 0, FALSE, TRUE)
+        
     
     writeLines(as.yaml(navbar_new), '_navbar.yml')
     files_tmp <- NULL
@@ -40,12 +45,12 @@ tryCatch({
             
             rmd_new <- template
             writeLines(rmd_new, file_name)
-            
-            sensitivity_test(
-                para_j
-                , paste0('_simulation/', para_j$text, '.apsimx'),
-                apsimx = apsimx)
-            
+            if (rerun) {
+                sensitivity_test(
+                    para_j
+                    , paste0('_simulation/', para_j$text, '.apsimx'),
+                    apsimx = apsimx)
+            }
             files_tmp <- c(files_tmp, file_name)
         }
     }

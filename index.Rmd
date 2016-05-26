@@ -10,10 +10,7 @@ This documentation is based on the current version of [APSIM-Wheat module](https
 ```
 
 
-Here we show the sensitivity analysis for major parameters in APSIM-Wheat. All pages of sensitivity analysis are automatically compiled from a template, so that the similar page structure is presented in all pages. Pay attentions to title and table of contents in each page.
-
-
-
+Here we show the sensitivity analysis for major parameters in APSIM-Wheat. All pages of sensitivity analysis are automatically compiled from a template, so that the similar structure is presented in all pages. Pay attentions to title and table of contents in each page.
 
 
 

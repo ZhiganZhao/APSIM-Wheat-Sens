@@ -1,5 +1,14 @@
 #!/bin/bash
 set -e
+
+if [[ $(git diff --name-only | grep "sensitivity|_parameter") ]]; then
+    sudo apt-get install -y mono-complete
+else
+    echo "no files found"
+fi
+
+sudo apt-get install -y mono-complete
+
 # configure your name and email if you have not done so
 git config --global user.email "zheng.bangyou@gmail.com"
 git config --global user.name "Bangyou Zheng"

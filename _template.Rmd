@@ -96,6 +96,18 @@ plot_report(
 
 ## Leaf development
 
+
+```{r leaf-number, fig.asp = 1.3, fig.cap='Appeared number of green, senesced and total leaves'}
+y_cols <- c(
+    'Wheat.Leaf.PlantAppearedLeafNo',
+    'Wheat.Leaf.PlantAppearedGreenLeafNo',
+    'Wheat.Leaf.PlantsenescedLeafNo')
+
+plot_report(df, x_var, y_cols, x_lab = x_lab, 
+            y_lab = 'Leaf number')
+
+```
+
 ### Leaf area index
 
 ```{r leaf-lai, fig.cap='Leaf area index'}
@@ -106,6 +118,7 @@ y_cols <- c(
 plot_report(df, x_var, y_cols, x_lab = x_lab, y_lab = 'Leaf area index')
 
 ```
+
 ### Coverage
 
 ```{r leaf-cover, fig.cap='Coverage'}

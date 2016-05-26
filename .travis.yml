@@ -1,14 +1,8 @@
 language: r
 
+sudo: required
+dist: trusty
 
-sudo: false
-
-r_packages:
-  - ggplot2
-  - devtools
-
-r_github_packages:
-  - rstudio/bookdown
 
 notifications:
   email:
@@ -18,6 +12,7 @@ notifications:
     on_failure: always
 
 install:
+   - sudo apt-get install -y mono-complete
    - Rscript -e "if (!require('ggplot2')) install.packages('ggplot2')"
    - Rscript -e "if (!require('devtools')) install.packages('devtools')"
    - Rscript -e "if (!require('xml2')) install.packages('xml2')"
@@ -26,6 +21,7 @@ install:
    - Rscript -e "if (!require('readr')) install.packages('readr')"
    - Rscript -e "if (!require('pander')) install.packages('pander')"
    - Rscript -e "if (!require('rmarkdown')) devtools::install_github('rstudio/rmarkdown')"
+   
 before_script:
   - chmod +x ./_build.sh
 

@@ -15,9 +15,11 @@ title: `r params$para$text`
 library(knitr)
 library(pander)
 opts_chunk$set(
-    cache = FALSE, echo = FALSE, 
+    cache = TRUE, echo = FALSE, 
     out.width = '100%', fig.asp = 1,
     warning = FALSE, fig.align = 'center',
+    fig.path = paste0('figs/', params$para$text, '/'),
+    cache.path = paste0('cache/', params$para$text, '/'),
     message = FALSE) 
 library(readr)
 library(dplyr)

@@ -1325,34 +1325,32 @@ The model consists of:
             <Name>LeafSizeShapeParameter</Name>
             <Value>0.3</Value>
           </Constant>
-          <MultiplyFunction>
-            <Name>MaxArea</Name>
-            <Constant>
-              <Name>AreaLargestLeaves</Name>
-              <Value>2600</Value>
-              <Units>mm^2</Units>
-            </Constant>
-            <LinearInterpolationFunction>
-              <Name>AgeFactor</Name>
-              <XYPairs>
-                <Name>XYPairs</Name>
-                <X>
-                  <double>3</double>
-                  <double>4</double>
-                </X>
-                <Y>
-                  <double>0.1</double>
-                  <double>1</double>
-                </Y>
-              </XYPairs>
-              <XProperty>[Phenology].Stage</XProperty>
-            </LinearInterpolationFunction>
-          </MultiplyFunction>
           <Constant>
             <Name>SenessingLeafRelativeSize</Name>
             <Value>0.1</Value>
             <Units>0-1</Units>
           </Constant>
+          <LinearInterpolationFunction>
+            <Name>MaxArea</Name>
+            <XYPairs>
+              <Name>XYPairs</Name>
+              <X>
+                <double>0</double>
+                <double>0.3</double>
+                <double>0.5</double>
+                <double>0.7</double>
+                <double>1</double>
+              </X>
+              <Y>
+                <double>300</double>
+                <double>1000</double>
+                <double>1600</double>
+                <double>2600</double>
+                <double>2600</double>
+              </Y>
+            </XYPairs>
+            <XProperty>[Structure].RelativeNodeApperance</XProperty>
+          </LinearInterpolationFunction>
         </LeafCohortParameters>
         <RUEModel>
           <Name>Photosynthesis</Name>
@@ -2262,47 +2260,6 @@ The EarLive composite biomass object includes the Live pools of all organs withi
         </Operations>
         <Specifications>
           <string>[Sowing]</string>
-        </Specifications>
-      </Factor>
-      <Factor>
-        <Name>Management</Name>
-        <Operations>
-          <Name>IHN</Name>
-          <Operation>
-            <Date>2015-05-21T00:00:00</Date>
-            <Action> [Fertiliser].Apply(Amount: 205, Type: Fertiliser.Types.Urea);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-05-22T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:24);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-06-26T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:25);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-07-14T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:26);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-07-31T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:26);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-08-14T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:25);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-08-26T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:25);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-09-09T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:25);</Action>
-          </Operation>
-        </Operations>
-        <Specifications>
-          <string>[Management]</string>
         </Specifications>
       </Factor>
     </Factors>

@@ -20,7 +20,7 @@ fi
 
 
 Rscript _generate-gh-pages.R
-git add --ignore-errors *
+git add -A --ignore-errors .
 git commit -m "Update the website"
 git push
 

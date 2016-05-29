@@ -30,4 +30,4 @@ script:
 cache:
   - packages: yes
   - directories:
-    - $HOME/site-output/cache
+    - $HOME/APSIM-Wheat-Sens/site-output/cache

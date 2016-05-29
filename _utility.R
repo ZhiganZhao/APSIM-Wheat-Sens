@@ -25,9 +25,9 @@ sensitivity_test <- function(
     level_num <- levels[1]
     
     output_file <- gsub('apsimx', 'db.Report.csv', filename)
-    if (file.exists(output_file)) {
-        return(NULL)
-    }
+    # if (file.exists(output_file)) {
+        # return(NULL)
+    # }
     
     apsimx_template <- readLines(template)
     # Add new cultivars

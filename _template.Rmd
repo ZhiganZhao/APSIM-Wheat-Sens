@@ -15,9 +15,11 @@ title: `r params$para$text`
 library(knitr)
 library(pander)
 opts_chunk$set(
-    cache = FALSE, echo = FALSE, 
+    cache = TRUE, echo = FALSE, 
     out.width = '100%', fig.asp = 1,
     warning = FALSE, fig.align = 'center',
+    fig.path = paste0('figs/', params$para$text, '/'),
+    cache.path = paste0('cache/', params$para$text, '/'),
     message = FALSE) 
 library(readr)
 library(dplyr)
@@ -40,7 +42,7 @@ x_lab <- 'Accumulated thermal time or stage'
 
 ```
 
-## Configuration
+## Configuration {#sec-configuration}
 
 The sensitivity analysis is conducted for parameter(s).
 
@@ -75,7 +77,7 @@ data.frame(Cultivar = paste0('Dummy', seq(length = level_num))) %>%
 ```
 
 
-## Phenology 
+## Phenology {#sec-phenology}
 
 
 ```{r leaf-tt-stage, fig.asp=0.75, fig.cap='The growthing stage as a function of accumulated thermal  time '}
@@ -165,6 +167,8 @@ plot_report(df, x_var, y_cols, x_lab = x_lab, y_lab = 'Leaf area index')
 
 ```
 
+
+
 ### Coverage
 
 ```{r leaf-cover, fig.cap='Coverage'}
@@ -177,7 +181,7 @@ plot_report(df, x_var, y_cols, x_lab = x_lab, y_lab = 'Coverage')
 ```
 
 
-
+### Leaf biomass
 
 
 

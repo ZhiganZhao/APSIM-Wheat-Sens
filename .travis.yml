@@ -28,4 +28,6 @@ script:
   - ./_build.sh
 
 cache:
-  packages: yes
+  - packages: yes
+  - directories:
+    - $HOME/site-output/cache

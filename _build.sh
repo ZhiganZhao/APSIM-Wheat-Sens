@@ -23,3 +23,5 @@ Rscript _generate-gh-pages.R
 git add *
 git commit -m "Update the website"
 git push
+
+pwd

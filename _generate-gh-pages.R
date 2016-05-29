@@ -27,7 +27,11 @@ tryCatch({
     git_diff <- system('git diff --name-only', intern = TRUE) 
     rerun <- ifelse(length(grep('sensitivity|_parameter', git_diff)) == 0, FALSE, TRUE)
         
-    
+    if (rerun) {
+        file.remove(list.files('cache', full.names = TRUE, recursive = TRUE))
+        unlink('cache', recursive = TRUE, force = TRUE)
+        unlink('figs', recursive = TRUE, force = TRUE)
+    }
     writeLines(as.yaml(navbar_new), '_navbar.yml')
     files_tmp <- NULL
     for (i in seq(along = para)) {

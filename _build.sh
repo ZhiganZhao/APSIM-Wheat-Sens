@@ -21,7 +21,7 @@ fi
 
 Rscript _generate-gh-pages.R
 git add -A --ignore-errors .
-git commit -m "Update the website"
+git diff --quiet --exit-code --cached || git commit -m "Update the website"
 git push
 
 pwd

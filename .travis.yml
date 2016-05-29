@@ -28,6 +28,6 @@ script:
   - ./_build.sh
 
 cache:
-  - packages: yes
-  - directories:
-    - $HOME/APSIM-Wheat-Sens/site-output/cache
+  packages: yes
+  directories:
+    - $TRAVIS_BUILD_DIR/cache

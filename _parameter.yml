@@ -19,6 +19,11 @@
         - name: "[Leaf].ExtinctionCoeff.PotentialExtinctionCoeff.XYPairs.Y"
           level: ["0.3, 0.3", "0.5, 0.5", "0.7, 0.7"]
       href: PotentialExtinctionCoeff.html
+    - text: AreaLargestLeaves
+      para: 
+        - name: "[Leaf].CohortParameters.MaxArea.AreaLargestLeaves"
+          level: ["2100", "2600", "3100", "4000"]
+      href: AreaLargestLeaves.html
     - text: FrostFraction
       para:
         - name: "[Leaf].FrostFraction.XYPairs.X"

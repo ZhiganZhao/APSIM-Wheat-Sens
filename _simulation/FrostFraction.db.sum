@@ -15,9 +15,9 @@ th.col1 { text-align:left; }
 </style>
 </head>
 <body>
-<h2>.15TraitModCultivarDummy1Management</h2>
+<h2>.15TraitModCultivarDummy1</h2>
 <table>
-<tr><td class='col1'>Simulation name: </td><td>15TraitModCultivarDummy1Management</td></tr>
+<tr><td class='col1'>Simulation name: </td><td>15TraitModCultivarDummy1</td></tr>
 </table><br/>
 <br/>
 <h2>Weather</h2>
@@ -320,9 +320,154 @@ th.col1 { text-align:left; }
 </style>
 </head>
 <body>
-<h2>.15TraitModCultivarDummy2Management</h2>
+<h2>Simulation log:</h2>
+<h3>2015-05-21 Field.Wheat</h3>
+<pre>
+A crop of Wheat (cultivar = Dummy1) was sown today at a population of 150 plants/m2 with 1 buds per plant at a row spacing of 250 and a depth of 40 mm
+
+</pre>
+<h3>2015-05-21 Field.Fertiliser</h3>
+<pre>
+205 kg/ha of Urea added at depth 0 layer 1
+
+</pre>
+<h3>2015-05-22 Field.Irrigation</h3>
+<pre>
+24.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-05-22 Field.Wheat</h3>
+<pre>
+Germination
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-05-28 Field.Wheat</h3>
+<pre>
+Emergence
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-06-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-14 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-17 Field.Wheat</h3>
+<pre>
+TerminalSpikelet
+  LAI = 4.93 (m^2/m^2)
+  Above Ground Biomass = 239.93 (g/m^2)
+
+
+</pre>
+<h3>2015-07-31 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-09 Field.Wheat</h3>
+<pre>
+FlagLeaf
+  LAI = 8.57 (m^2/m^2)
+  Above Ground Biomass = 567.94 (g/m^2)
+
+
+</pre>
+<h3>2015-08-14 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-28 Field.Wheat</h3>
+<pre>
+Flowering
+  LAI = 5.77 (m^2/m^2)
+  Above Ground Biomass = 836.69 (g/m^2)
+
+
+</pre>
+<h3>2015-09-04 Field.Wheat</h3>
+<pre>
+StartGrainFill
+  LAI = 4.75 (m^2/m^2)
+  Above Ground Biomass = 1007.81 (g/m^2)
+
+
+</pre>
+<h3>2015-09-09 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-10-06 Field.Wheat</h3>
+<pre>
+EndGrainFill
+  LAI = 0.22 (m^2/m^2)
+  Above Ground Biomass = 1351.98 (g/m^2)
+
+
+</pre>
+<h3>2015-10-08 Field.Wheat</h3>
+<pre>
+Maturity
+  LAI = 0.14 (m^2/m^2)
+  Above Ground Biomass = 1355.05 (g/m^2)
+
+
+</pre>
+<h3>2015-10-24 Field.Wheat</h3>
+<pre>
+HarvestRipe
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 1356.57 (g/m^2)
+
+
+</pre>
+<h3>2015-11-18 Clock</h3>
+<pre>
+Simulation terminated normally
+
+</pre>
+</body>
+</html>
+
+
+############################################################################
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8; http-equiv='content-type'>
+<style>
+h2 { color:darkblue; } 
+h3 { color:darkblue; } 
+table { border:1px solid black; border-collapse:collapse; width:100%; table-layout:fixed; text-align:left; }
+table.headered {text-align:right; }
+tr.total { color:darkorange; font-weight:bold; }
+table.headered td.col1 { text-align:left; font-weight:bold; }
+td { border:1px solid; }
+th { border:1px solid; text-align:right; background-color: palegoldenrod}
+th.col1 { text-align:left; }
+</style>
+</head>
+<body>
+<h2>.15TraitModCultivarDummy2</h2>
 <table>
-<tr><td class='col1'>Simulation name: </td><td>15TraitModCultivarDummy2Management</td></tr>
+<tr><td class='col1'>Simulation name: </td><td>15TraitModCultivarDummy2</td></tr>
 </table><br/>
 <br/>
 <h2>Weather</h2>
@@ -625,9 +770,154 @@ th.col1 { text-align:left; }
 </style>
 </head>
 <body>
-<h2>.15TraitModCultivarDummy3Management</h2>
+<h2>Simulation log:</h2>
+<h3>2015-05-21 Field.Wheat</h3>
+<pre>
+A crop of Wheat (cultivar = Dummy2) was sown today at a population of 150 plants/m2 with 1 buds per plant at a row spacing of 250 and a depth of 40 mm
+
+</pre>
+<h3>2015-05-21 Field.Fertiliser</h3>
+<pre>
+205 kg/ha of Urea added at depth 0 layer 1
+
+</pre>
+<h3>2015-05-22 Field.Irrigation</h3>
+<pre>
+24.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-05-22 Field.Wheat</h3>
+<pre>
+Germination
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-05-28 Field.Wheat</h3>
+<pre>
+Emergence
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-06-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-14 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-17 Field.Wheat</h3>
+<pre>
+TerminalSpikelet
+  LAI = 4.93 (m^2/m^2)
+  Above Ground Biomass = 239.93 (g/m^2)
+
+
+</pre>
+<h3>2015-07-31 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-09 Field.Wheat</h3>
+<pre>
+FlagLeaf
+  LAI = 8.32 (m^2/m^2)
+  Above Ground Biomass = 567.91 (g/m^2)
+
+
+</pre>
+<h3>2015-08-14 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-28 Field.Wheat</h3>
+<pre>
+Flowering
+  LAI = 5.62 (m^2/m^2)
+  Above Ground Biomass = 836.51 (g/m^2)
+
+
+</pre>
+<h3>2015-09-04 Field.Wheat</h3>
+<pre>
+StartGrainFill
+  LAI = 4.63 (m^2/m^2)
+  Above Ground Biomass = 1007.55 (g/m^2)
+
+
+</pre>
+<h3>2015-09-09 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-10-06 Field.Wheat</h3>
+<pre>
+EndGrainFill
+  LAI = 0.22 (m^2/m^2)
+  Above Ground Biomass = 1351.12 (g/m^2)
+
+
+</pre>
+<h3>2015-10-08 Field.Wheat</h3>
+<pre>
+Maturity
+  LAI = 0.14 (m^2/m^2)
+  Above Ground Biomass = 1354.18 (g/m^2)
+
+
+</pre>
+<h3>2015-10-24 Field.Wheat</h3>
+<pre>
+HarvestRipe
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 1355.69 (g/m^2)
+
+
+</pre>
+<h3>2015-11-18 Clock</h3>
+<pre>
+Simulation terminated normally
+
+</pre>
+</body>
+</html>
+
+
+############################################################################
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8; http-equiv='content-type'>
+<style>
+h2 { color:darkblue; } 
+h3 { color:darkblue; } 
+table { border:1px solid black; border-collapse:collapse; width:100%; table-layout:fixed; text-align:left; }
+table.headered {text-align:right; }
+tr.total { color:darkorange; font-weight:bold; }
+table.headered td.col1 { text-align:left; font-weight:bold; }
+td { border:1px solid; }
+th { border:1px solid; text-align:right; background-color: palegoldenrod}
+th.col1 { text-align:left; }
+</style>
+</head>
+<body>
+<h2>.15TraitModCultivarDummy3</h2>
 <table>
-<tr><td class='col1'>Simulation name: </td><td>15TraitModCultivarDummy3Management</td></tr>
+<tr><td class='col1'>Simulation name: </td><td>15TraitModCultivarDummy3</td></tr>
 </table><br/>
 <br/>
 <h2>Weather</h2>
@@ -785,6 +1075,151 @@ th.col1 { text-align:left; }
 <tr><td class='col1'>Wheat.Leaf.CoverTotal</td><td></td></tr>
 </table><br/>
 <br/>
+<h2>Simulation log:</h2>
+<h3>2015-05-21 Field.Wheat</h3>
+<pre>
+A crop of Wheat (cultivar = Dummy3) was sown today at a population of 150 plants/m2 with 1 buds per plant at a row spacing of 250 and a depth of 40 mm
+
+</pre>
+<h3>2015-05-21 Field.Fertiliser</h3>
+<pre>
+205 kg/ha of Urea added at depth 0 layer 1
+
+</pre>
+<h3>2015-05-22 Field.Irrigation</h3>
+<pre>
+24.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-05-22 Field.Wheat</h3>
+<pre>
+Germination
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-05-28 Field.Wheat</h3>
+<pre>
+Emergence
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 0.00 (g/m^2)
+
+
+</pre>
+<h3>2015-06-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-14 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-07-17 Field.Wheat</h3>
+<pre>
+TerminalSpikelet
+  LAI = 4.93 (m^2/m^2)
+  Above Ground Biomass = 239.93 (g/m^2)
+
+
+</pre>
+<h3>2015-07-31 Field.Irrigation</h3>
+<pre>
+26.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-09 Field.Wheat</h3>
+<pre>
+FlagLeaf
+  LAI = 8.07 (m^2/m^2)
+  Above Ground Biomass = 567.88 (g/m^2)
+
+
+</pre>
+<h3>2015-08-14 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-26 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-08-28 Field.Wheat</h3>
+<pre>
+Flowering
+  LAI = 5.47 (m^2/m^2)
+  Above Ground Biomass = 836.28 (g/m^2)
+
+
+</pre>
+<h3>2015-09-04 Field.Wheat</h3>
+<pre>
+StartGrainFill
+  LAI = 4.51 (m^2/m^2)
+  Above Ground Biomass = 1007.12 (g/m^2)
+
+
+</pre>
+<h3>2015-09-09 Field.Irrigation</h3>
+<pre>
+25.0 mm of water added at depth 0
+
+</pre>
+<h3>2015-10-06 Field.Wheat</h3>
+<pre>
+EndGrainFill
+  LAI = 0.22 (m^2/m^2)
+  Above Ground Biomass = 1350.20 (g/m^2)
+
+
+</pre>
+<h3>2015-10-08 Field.Wheat</h3>
+<pre>
+Maturity
+  LAI = 0.14 (m^2/m^2)
+  Above Ground Biomass = 1353.25 (g/m^2)
+
+
+</pre>
+<h3>2015-10-24 Field.Wheat</h3>
+<pre>
+HarvestRipe
+  LAI = 0.00 (m^2/m^2)
+  Above Ground Biomass = 1354.76 (g/m^2)
+
+
+</pre>
+<h3>2015-11-18 Clock</h3>
+<pre>
+Simulation terminated normally
+
+</pre>
+</body>
+</html>
+
+
+############################################################################
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8; http-equiv='content-type'>
+<style>
+h2 { color:darkblue; } 
+h3 { color:darkblue; } 
+table { border:1px solid black; border-collapse:collapse; width:100%; table-layout:fixed; text-align:left; }
+table.headered {text-align:right; }
+tr.total { color:darkorange; font-weight:bold; }
+table.headered td.col1 { text-align:left; font-weight:bold; }
+td { border:1px solid; }
+th { border:1px solid; text-align:right; background-color: palegoldenrod}
+th.col1 { text-align:left; }
+</style>
+</head>
+<body>
 <h2>Simulation log:</h2>
 <h3>2015-05-21 Field.Wheat</h3>
 <pre>

@@ -2248,19 +2248,25 @@ The EarLive composite biomass object includes the Live pools of all organs withi
             <Name>Dummy1</Name>
             <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
             <Command>[Phenology].Vernalisation.PhotopSens = 3.0</Command>
-<Command>[Phenology].Vernalisation.PhotopSens = 2</Command>
+<Command>[Leaf].CohortParameters.MaxArea.AreaLargestLeaves.Value = 2100</Command>
           </Cultivar>
           <Cultivar>
             <Name>Dummy2</Name>
             <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
             <Command>[Phenology].Vernalisation.PhotopSens = 3.0</Command>
-<Command>[Phenology].Vernalisation.PhotopSens = 3</Command>
+<Command>[Leaf].CohortParameters.MaxArea.AreaLargestLeaves.Value = 2600</Command>
           </Cultivar>
           <Cultivar>
             <Name>Dummy3</Name>
             <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
             <Command>[Phenology].Vernalisation.PhotopSens = 3.0</Command>
-<Command>[Phenology].Vernalisation.PhotopSens = 4</Command>
+<Command>[Leaf].CohortParameters.MaxArea.AreaLargestLeaves.Value = 3100</Command>
+          </Cultivar>
+          <Cultivar>
+            <Name>Dummy4</Name>
+            <Command>[Phenology].Vernalisation.VernSens = 1.5</Command>
+            <Command>[Phenology].Vernalisation.PhotopSens = 3.0</Command>
+<Command>[Leaf].CohortParameters.MaxArea.AreaLargestLeaves.Value = 4000</Command>
           </Cultivar>
       </CultivarFolder>
       <CropType>Wheat</CropType>
@@ -2296,6 +2302,13 @@ The EarLive composite biomass object includes the Live pools of all organs withi
           <Operation>
             <Date>2015-05-21T00:00:00</Date>
             <Action>[wheat].Sow(cultivar:"Dummy3", population:150, depth:40, rowSpacing:250);</Action>
+          </Operation>
+        </Operations>
+        <Operations>
+          <Name>Dummy4</Name>
+          <Operation>
+            <Date>2015-05-21T00:00:00</Date>
+            <Action>[wheat].Sow(cultivar:"Dummy4", population:150, depth:40, rowSpacing:250);</Action>
           </Operation>
         </Operations>
         <Specifications>

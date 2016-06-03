@@ -1016,16 +1016,22 @@ The model consists of:
         <Name>Leaf</Name>
         <LeafCohort>
           <Name>InitialLeaves[1]</Name>
+          <DeltaWaterConstrainedArea>0</DeltaWaterConstrainedArea>
+          <DeltaCarbonConstrainedArea>0</DeltaCarbonConstrainedArea>
           <Rank>1</Rank>
           <Area>200</Area>
         </LeafCohort>
         <LeafCohort>
           <Name>InitialLeaves[2]</Name>
+          <DeltaWaterConstrainedArea>0</DeltaWaterConstrainedArea>
+          <DeltaCarbonConstrainedArea>0</DeltaCarbonConstrainedArea>
           <Rank>2</Rank>
           <Area>0</Area>
         </LeafCohort>
         <LeafCohort>
           <Name>InitialLeaves[3]</Name>
+          <DeltaWaterConstrainedArea>0</DeltaWaterConstrainedArea>
+          <DeltaCarbonConstrainedArea>0</DeltaCarbonConstrainedArea>
           <Rank>3</Rank>
           <Area>0</Area>
         </LeafCohort>
@@ -1325,6 +1331,11 @@ The model consists of:
             <Name>LeafSizeShapeParameter</Name>
             <Value>0.3</Value>
           </Constant>
+          <Constant>
+            <Name>SenessingLeafRelativeSize</Name>
+            <Value>0.1</Value>
+            <Units>0-1</Units>
+          </Constant>
           <MultiplyFunction>
             <Name>MaxArea</Name>
             <Constant>
@@ -1348,11 +1359,6 @@ The model consists of:
               <XProperty>[Phenology].Stage</XProperty>
             </LinearInterpolationFunction>
           </MultiplyFunction>
-          <Constant>
-            <Name>SenessingLeafRelativeSize</Name>
-            <Value>0.1</Value>
-            <Units>0-1</Units>
-          </Constant>
         </LeafCohortParameters>
         <RUEModel>
           <Name>Photosynthesis</Name>
@@ -2296,47 +2302,6 @@ The EarLive composite biomass object includes the Live pools of all organs withi
           <string>[Sowing]</string>
         </Specifications>
       </Factor>
-      <Factor>
-        <Name>Management</Name>
-        <Operations>
-          <Name>IHN</Name>
-          <Operation>
-            <Date>2015-05-21T00:00:00</Date>
-            <Action> [Fertiliser].Apply(Amount: 205, Type: Fertiliser.Types.Urea);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-05-22T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:24);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-06-26T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:25);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-07-14T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:26);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-07-31T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:26);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-08-14T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:25);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-08-26T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:25);</Action>
-          </Operation>
-          <Operation>
-            <Date>2015-09-09T00:00:00</Date>
-            <Action> [Irrigation].Apply(amount:25);</Action>
-          </Operation>
-        </Operations>
-        <Specifications>
-          <string>[Management]</string>
-        </Specifications>
-      </Factor>
     </Factors>
     <Simulation>
       <Name>15TraitMod</Name>
@@ -2814,47 +2779,6 @@ The EarLive composite biomass object includes the Live pools of all organs withi
       <Area>0</Area>
       <Slope>0</Slope>
     </Simulation>
-    <Graph>
-      <Name>Graph</Name>
-      <Series>
-        <Name>Series</Name>
-        <Type>Scatter</Type>
-        <XAxis>Bottom</XAxis>
-        <YAxis>Left</YAxis>
-        <ColourArgb>0</ColourArgb>
-        <FactorIndexToVaryColours>-1</FactorIndexToVaryColours>
-        <FactorIndexToVaryMarkers>0</FactorIndexToVaryMarkers>
-        <FactorIndexToVaryLines>-1</FactorIndexToVaryLines>
-        <Marker>None</Marker>
-        <MarkerSize>Normal</MarkerSize>
-        <Line>Solid</Line>
-        <LineThickness>Normal</LineThickness>
-        <TableName>Report</TableName>
-        <XFieldName>Clock.Today</XFieldName>
-        <YFieldName>Wheat.Phenology.Stage</YFieldName>
-        <ShowInLegend>false</ShowInLegend>
-        <IncludeSeriesNameInLegend>false</IncludeSeriesNameInLegend>
-        <Cumulative>false</Cumulative>
-        <CumulativeX>false</CumulativeX>
-      </Series>
-      <Axis>
-        <Type>Bottom</Type>
-        <Inverted>false</Inverted>
-        <Minimum>NaN</Minimum>
-        <Maximum>NaN</Maximum>
-        <Interval>NaN</Interval>
-      </Axis>
-      <Axis>
-        <Type>Left</Type>
-        <Inverted>false</Inverted>
-        <Minimum>NaN</Minimum>
-        <Maximum>NaN</Maximum>
-        <Interval>NaN</Interval>
-      </Axis>
-      <LegendPosition>TopLeft</LegendPosition>
-      <DisabledSeries />
-      <IncludeInDocumentation>false</IncludeInDocumentation>
-    </Graph>
   </Experiment>
   <ExplorerWidth>355</ExplorerWidth>
 </Simulations>

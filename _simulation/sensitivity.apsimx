@@ -1016,16 +1016,22 @@ The model consists of:
         <Name>Leaf</Name>
         <LeafCohort>
           <Name>InitialLeaves[1]</Name>
+          <DeltaWaterConstrainedArea>0</DeltaWaterConstrainedArea>
+          <DeltaCarbonConstrainedArea>0</DeltaCarbonConstrainedArea>
           <Rank>1</Rank>
           <Area>200</Area>
         </LeafCohort>
         <LeafCohort>
           <Name>InitialLeaves[2]</Name>
+          <DeltaWaterConstrainedArea>0</DeltaWaterConstrainedArea>
+          <DeltaCarbonConstrainedArea>0</DeltaCarbonConstrainedArea>
           <Rank>2</Rank>
           <Area>0</Area>
         </LeafCohort>
         <LeafCohort>
           <Name>InitialLeaves[3]</Name>
+          <DeltaWaterConstrainedArea>0</DeltaWaterConstrainedArea>
+          <DeltaCarbonConstrainedArea>0</DeltaCarbonConstrainedArea>
           <Rank>3</Rank>
           <Area>0</Area>
         </LeafCohort>
@@ -1330,27 +1336,29 @@ The model consists of:
             <Value>0.1</Value>
             <Units>0-1</Units>
           </Constant>
-          <LinearInterpolationFunction>
+          <MultiplyFunction>
             <Name>MaxArea</Name>
-            <XYPairs>
-              <Name>XYPairs</Name>
-              <X>
-                <double>0</double>
-                <double>0.3</double>
-                <double>0.5</double>
-                <double>0.7</double>
-                <double>1</double>
-              </X>
-              <Y>
-                <double>300</double>
-                <double>1000</double>
-                <double>1600</double>
-                <double>2600</double>
-                <double>2600</double>
-              </Y>
-            </XYPairs>
-            <XProperty>[Structure].RelativeNodeApperance</XProperty>
-          </LinearInterpolationFunction>
+            <Constant>
+              <Name>AreaLargestLeaves</Name>
+              <Value>2600</Value>
+              <Units>mm^2</Units>
+            </Constant>
+            <LinearInterpolationFunction>
+              <Name>AgeFactor</Name>
+              <XYPairs>
+                <Name>XYPairs</Name>
+                <X>
+                  <double>3</double>
+                  <double>4</double>
+                </X>
+                <Y>
+                  <double>0.1</double>
+                  <double>1</double>
+                </Y>
+              </XYPairs>
+              <XProperty>[Phenology].Stage</XProperty>
+            </LinearInterpolationFunction>
+          </MultiplyFunction>
         </LeafCohortParameters>
         <RUEModel>
           <Name>Photosynthesis</Name>
@@ -2739,47 +2747,6 @@ The EarLive composite biomass object includes the Live pools of all organs withi
       <Area>0</Area>
       <Slope>0</Slope>
     </Simulation>
-    <Graph>
-      <Name>Graph</Name>
-      <Series>
-        <Name>Series</Name>
-        <Type>Scatter</Type>
-        <XAxis>Bottom</XAxis>
-        <YAxis>Left</YAxis>
-        <ColourArgb>0</ColourArgb>
-        <FactorIndexToVaryColours>-1</FactorIndexToVaryColours>
-        <FactorIndexToVaryMarkers>0</FactorIndexToVaryMarkers>
-        <FactorIndexToVaryLines>-1</FactorIndexToVaryLines>
-        <Marker>None</Marker>
-        <MarkerSize>Normal</MarkerSize>
-        <Line>Solid</Line>
-        <LineThickness>Normal</LineThickness>
-        <TableName>Report</TableName>
-        <XFieldName>Clock.Today</XFieldName>
-        <YFieldName>Wheat.Phenology.Stage</YFieldName>
-        <ShowInLegend>false</ShowInLegend>
-        <IncludeSeriesNameInLegend>false</IncludeSeriesNameInLegend>
-        <Cumulative>false</Cumulative>
-        <CumulativeX>false</CumulativeX>
-      </Series>
-      <Axis>
-        <Type>Bottom</Type>
-        <Inverted>false</Inverted>
-        <Minimum>NaN</Minimum>
-        <Maximum>NaN</Maximum>
-        <Interval>NaN</Interval>
-      </Axis>
-      <Axis>
-        <Type>Left</Type>
-        <Inverted>false</Inverted>
-        <Minimum>NaN</Minimum>
-        <Maximum>NaN</Maximum>
-        <Interval>NaN</Interval>
-      </Axis>
-      <LegendPosition>TopLeft</LegendPosition>
-      <DisabledSeries />
-      <IncludeInDocumentation>false</IncludeInDocumentation>
-    </Graph>
   </Experiment>
   <ExplorerWidth>355</ExplorerWidth>
 </Simulations>

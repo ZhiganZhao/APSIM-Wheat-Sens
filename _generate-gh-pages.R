@@ -24,7 +24,7 @@ tryCatch({
     navbar_new$left <- c(navbar_new$left, para)
     
     # Check whether rerun simulations
-    git_diff <- system('git diff --name-only', intern = TRUE) 
+    git_diff <- system('git diff --name-only HEAD~1', intern = TRUE) 
     rerun <- ifelse(length(grep('sensitivity|_parameter', git_diff)) == 0, FALSE, TRUE)
         
     if (rerun) {

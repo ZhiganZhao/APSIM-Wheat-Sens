@@ -11,6 +11,7 @@ cd site-output
 
 git pull --no-edit origin master
 
+git diff
 
 if [[ $(git diff --name-only | grep "sensitivity.apsimx\|_parameter.yml\|_build.sh") ]]; then
     sudo apt-get install -y mono-complete

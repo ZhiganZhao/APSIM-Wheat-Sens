@@ -1016,16 +1016,22 @@ The model consists of:
         <Name>Leaf</Name>
         <LeafCohort>
           <Name>InitialLeaves[1]</Name>
+          <DeltaWaterConstrainedArea>0</DeltaWaterConstrainedArea>
+          <DeltaCarbonConstrainedArea>0</DeltaCarbonConstrainedArea>
           <Rank>1</Rank>
           <Area>200</Area>
         </LeafCohort>
         <LeafCohort>
           <Name>InitialLeaves[2]</Name>
+          <DeltaWaterConstrainedArea>0</DeltaWaterConstrainedArea>
+          <DeltaCarbonConstrainedArea>0</DeltaCarbonConstrainedArea>
           <Rank>2</Rank>
           <Area>0</Area>
         </LeafCohort>
         <LeafCohort>
           <Name>InitialLeaves[3]</Name>
+          <DeltaWaterConstrainedArea>0</DeltaWaterConstrainedArea>
+          <DeltaCarbonConstrainedArea>0</DeltaCarbonConstrainedArea>
           <Rank>3</Rank>
           <Area>0</Area>
         </LeafCohort>
@@ -1330,27 +1336,29 @@ The model consists of:
             <Value>0.1</Value>
             <Units>0-1</Units>
           </Constant>
-          <LinearInterpolationFunction>
+          <MultiplyFunction>
             <Name>MaxArea</Name>
-            <XYPairs>
-              <Name>XYPairs</Name>
-              <X>
-                <double>0</double>
-                <double>0.3</double>
-                <double>0.5</double>
-                <double>0.7</double>
-                <double>1</double>
-              </X>
-              <Y>
-                <double>300</double>
-                <double>1000</double>
-                <double>1600</double>
-                <double>2600</double>
-                <double>2600</double>
-              </Y>
-            </XYPairs>
-            <XProperty>[Structure].RelativeNodeApperance</XProperty>
-          </LinearInterpolationFunction>
+            <Constant>
+              <Name>AreaLargestLeaves</Name>
+              <Value>2600</Value>
+              <Units>mm^2</Units>
+            </Constant>
+            <LinearInterpolationFunction>
+              <Name>AgeFactor</Name>
+              <XYPairs>
+                <Name>XYPairs</Name>
+                <X>
+                  <double>3</double>
+                  <double>4</double>
+                </X>
+                <Y>
+                  <double>0.1</double>
+                  <double>1</double>
+                </Y>
+              </XYPairs>
+              <XProperty>[Phenology].Stage</XProperty>
+            </LinearInterpolationFunction>
+          </MultiplyFunction>
         </LeafCohortParameters>
         <RUEModel>
           <Name>Photosynthesis</Name>

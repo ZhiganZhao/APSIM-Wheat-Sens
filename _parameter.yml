@@ -21,7 +21,7 @@
       href: PotentialExtinctionCoeff.html
     - text: AreaLargestLeaves
       para: 
-        - name: "[Leaf].CohortParameters.MaxArea.AreaLargestLeaves"
+        - name: "[Leaf].CohortParameters.MaxArea.AreaLargestLeaves.Value"
           level: ["2100", "2600", "3100", "4000"]
       href: AreaLargestLeaves.html
     - text: FrostFraction
